@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/jobSeekerDashboard.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Job Seeker Dashboard</title>
+    </head>
+    <body>
+
+        <!-- job seeker header -->
+        <header class="jobseeker-header">
+            <div class="jobseeker-header-container">
+
+                <!-- logo -->
+                <a href="jobSeekerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.PNG" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- job seeker navigation -->
+                <nav class="jobseeker-nav">
+                    <a href="jobSeekerDashboard.html" class="active">Dashboard</a>
+                    <a href="findJobs.html">Find Jobs</a>
+                    <a href="savedJobs.html">Saved Jobs</a>
+                    <a href="myApplications.html">My Applications</a>
+                    <a href="messages.html">Messages</a>
+                    <a href="candidateProfile.html">Profile</a>
+                </nav>
+
+                <!-- user profile -->
+                <div class="jobseeker-profile">
+                    <div class="jobseeker-picture">
+                        <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                    </div>
+                    <div class="jobseeker-profile-name">
+                        <strong>Ryzza Mae Dizon</strong>
+                        <span>Job Seeker</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main dashboard -->
+        <main class="jobseeker-main">
+
+            <!-- welcome section -->
+            <section class="jobseeker-welcome">
+                <div>
+                    <h1>Welcome back, Ryzza!</h1>
+                    <p>Keep track of your job search and discover new career opportunities.</p>
+                </div>
+
+                <a href="#" class="browse-jobs-button">
+                    <img src="asset/images/icons/search.svg" alt="Search">
+                    Browse Jobs
+                </a>
+            </section>
+
+            <!-- dashboard statistics -->
+            <section class="jobseeker-stats">
+
+                <!-- applications -->
+                <div class="jobseeker-stat-card">
+                    <div class="jobseeker-stat-icon">
+                        <img src="asset/images/icons/file-text-black.svg" alt="Applications">
+                    </div>
+
+                    <div>
+                        <p>Applications</p>
+                        <h2>12</h2>
+                        <a href="myApplications.html">View Applications</a>
+                    </div>
+                </div>
+
+                <!-- in review -->
+                <div class="jobseeker-stat-card">
+                    <div class="jobseeker-stat-icon">
+                        <img src="asset/images/icons/clock.svg" alt="In Review">
+                    </div>
+
+                    <div>
+                        <p>In Review</p>
+                        <h2>5</h2>
+                        <a href="#">View Status</a>
+                    </div>
+                </div>
+
+                <!-- interviews -->
+                <div class="jobseeker-stat-card">
+                    <div class="jobseeker-stat-icon">
+                        <img src="asset/images/icons/calendar.png" alt="Interviews">
+                    </div>
+
+                    <div>
+                        <p>Interviews</p>
+                        <h2>3</h2>
+                        <a href="#">View Interviews</a>
+                    </div>
+                </div>
+
+                <!-- saved jobs -->
+                <div class="jobseeker-stat-card">
+                    <div class="jobseeker-stat-icon">
+                        <img src="asset/images/icons/bookmark.png" alt="Saved Jobs">
+                    </div>
+
+                    <div>
+                        <p>Saved Jobs</p>
+                        <h2>8</h2>
+                        <a href="savedJobs.html">View Saved Jobs</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- main dashboard content -->
+            <section class="jobseeker-content">
+
+                <!-- recommended jobs -->
+                <section class="jobseeker-panel recommended-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Recommended Jobs</h2>
+                            <p>Opportunities that match your profile.</p>
+                        </div>
+
+                        <a href="#">View All</a>
+                    </div>
+
+                    <!-- job 1 -->
+                    <div class="recommended-job">
+                        <div class="company-logo">
+                            <img src="asset/images/company/technova.png">
+                        </div>
+
+                        <div class="recommended-job-info">
+                            <h3>Senior Software Engineer</h3>
+                            <p class="company-name">TechNova Solutions</p>
+                            <p class="job-details">Makati City • Hybrid • Full-Time</p>
+                            <p class="job-salary">₱120,000 - ₱150,000 / month</p>
+                        </div>
+
+                        <div class="job-card-actions">
+                            <button type="button" class="save-job-button">
+                                <img src="asset/images/icons/bookmark-blue.png">
+                                Save
+                            </button>
+
+                            <button type="button" class="apply-button">Apply</button>
+                        </div>
+                    </div>
+
+                    <!-- job 2 -->
+                    <div class="recommended-job">
+                        <div class="company-logo">
+                            <img src="asset/images/company/digitalworks.png">
+                        </div>
+
+                        <div class="recommended-job-info">
+                            <h3>Front-End Developer</h3>
+                            <p class="company-name">DigitalWorks PH</p>
+                            <p class="job-details">Taguig City • Remote • Full-Time</p>
+                            <p class="job-salary">₱80,000 - ₱110,000 / month</p>
+                        </div>
+
+                        <div class="job-card-actions">
+                            <button type="button" class="save-job-button">
+                                <img src="asset/images/icons/bookmark-blue.png">
+                                Save
+                            </button>
+
+                            <button type="button" class="apply-button">Apply</button>
+                        </div>
+                    </div>
+
+                    <!-- job 3 -->
+                    <div class="recommended-job">
+                        <div class="company-logo">
+                            <img src="asset/images/company/cloudcore.png">
+                        </div>
+
+                        <div class="recommended-job-info">
+                            <h3>Full Stack Developer</h3>
+                            <p class="company-name">CloudCore Technologies</p>
+                            <p class="job-details">Pasig City • Hybrid • Full-Time</p>
+                            <p class="job-salary">₱100,000 - ₱130,000 / month</p>
+                        </div>
+
+                        <div class="job-card-actions">
+                            <button type="button" class="save-job-button">
+                                <img src="asset/images/icons/bookmark-blue.png">
+                                Save
+                            </button>
+
+                            <button type="button" class="apply-button">Apply</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- right side -->
+                <div class="jobseeker-right">
+
+                    <!-- application status -->
+                    <section class="jobseeker-panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h2>Recent Applications</h2>
+                                <p>Track your latest applications.</p>
+                            </div>
+                            <a href="myApplications.html">View All</a>
+                        </div>
+
+                        <!-- application 1 -->
+                        <div class="application-item">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p>TechNova Solutions</p>
+                                <span>Applied Sep 2, 2026</span>
+                            </div>
+
+                            <strong class="application-review">In Review</strong>
+                        </div>
+
+                        <!-- application 2 -->
+                        <div class="application-item">
+                            <div>
+                                <h3>Web Developer</h3>
+                                <p>PixelPoint Inc.</p>
+                                <span>Applied Aug 30, 2026</span>
+                            </div>
+
+                            <strong class="application-interview">Interview</strong>
+                        </div>
+
+                        <!-- application 3 -->
+                        <div class="application-item">
+                            <div>
+                                <h3>Junior Developer</h3>
+                                <p>WebWorks PH</p>
+                                <span>Applied Aug 25, 2026</span>
+                            </div>
+
+                            <strong class="application-submitted">Submitted</strong>
+                        </div>
+                    </section>
+
+                    <!-- profile completion -->
+                    <section class="jobseeker-panel profile-completion">
+                        <div class="completion-heading">
+                            <div>
+                                <h2>Profile Completion</h2>
+                                <p>Complete your profile to attract more employers.</p>
+                            </div>
+
+                            <strong>80%</strong>
+                        </div>
+
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+
+                        <a href="candidateProfile.html" class="complete-profile-button">Complete Profile</a>
+                    </section>
+
+                    <!-- quick actions -->
+                    <section class="jobseeker-panel quick-actions">
+                        <h2>Quick Actions</h2>
+                        <a href="#">
+                            <div class="quick-action-icon">
+                                <img src="asset/images/icons/search-black.svg">
+                            </div>
+
+                            <div>
+                                <strong>Browse Jobs</strong>
+                                <span>Discover new opportunities</span>
+                            </div>
+                        </a>
+
+                        <a href="savedJobs.html">
+                            <div class="quick-action-icon">
+                                <img src="asset/images/icons/bookmark.png">
+                            </div>
+
+                            <div>
+                                <strong>Saved Jobs</strong>
+                                <span>Review jobs you saved</span>
+                            </div>
+                        </a>
+
+                        <a href="candidateProfile.html">
+                            <div class="quick-action-icon">
+                                <img src="asset/images/icons/user.svg">
+                            </div>
+
+                            <div>
+                                <strong>View Profile</strong>
+                                <span>Review your public profile</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </main>     
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <dialog id="apply-job-dialog" aria-labelledby="apply-job-title" aria-describedby="apply-job-description">
+            <div class="apply-dialog-icon" aria-hidden="true">✓</div>
+            <h2 id="apply-job-title">Apply for this position?</h2>
+            <p id="apply-job-description">
+                Confirm your application for
+                <strong id="application-job-name"></strong>.
+            </p>
+
+            <form method="dialog" class="apply-dialog-actions">
+                <button type="submit" value="cancel" autofocus>
+                    Cancel
+                </button>
+
+                <button type="submit" value="apply" class="confirm-application">
+                    Confirm Application
+                </button>
+            </form>
+        </dialog>
+
+        <!-- scripts -->
+        <script src="js/jobSeekerActions.js"></script>
+    </body>
+</html>

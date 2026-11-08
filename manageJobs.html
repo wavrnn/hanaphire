@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/manageJobs.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Manage Jobs</title>
+    </head>
+    <body>
+
+        <!-- dashboard header -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-container">
+
+                <!-- logo -->
+                <a href="employerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- employer navigation -->
+                <nav class="dashboard-nav">
+                    <a href="employerDashboard.html" class="nav-page">Dashboard</a>
+                    <a href="findJobs.html" class="nav-page">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="manageApplicants.html" class="nav-page">Applicants</a>
+                    <a href="manageJobs.html" class="nav-page active">Manage Jobs</a>
+                    <a href="companyProfile.html" class="nav-page">Company</a>
+                    <a href="messages.html?role=employer" class="nav-page">Messages</a>
+                </nav>
+
+                <!-- employer profile -->
+                <div class="employer-profile">
+                    <div class="profile-picture">
+                        <img src="asset/images/company/company-logo.png" alt="Company">
+                    </div>
+
+                    <div class="profile-name">
+                        <strong>Lorem Ipsum</strong>
+                        <span>Employer</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="jobs-main">
+            
+            <!-- page heading -->
+            <section class="jobs-heading">
+                <div>
+                    <h1>Manage Jobs</h1>
+                    <p>View and manage all your posted job opportunities.</p>
+                </div>
+
+                <a href="postJob.html" class="post-job-button">
+                    <img src="asset/images/icons/plus-white.svg" alt="Post a Job" class="button-icon">
+                    Post a New Job
+                </a>
+            </section>
+
+            <!-- job summary -->
+            <section class="job-summary">
+
+                <!-- total jobs -->
+                <div class="job-summary-card">
+                    <div class="job-summary-icon">
+                        <img src="asset/images/icons/briefcase.svg" alt="Total Jobs">
+                    </div>
+
+                    <div>
+                        <p>Total Jobs</p>
+                        <h2>15</h2>
+                    </div>
+                </div>
+
+                <!-- active jobs -->
+                <div class="job-summary-card">
+                    <div class="job-summary-icon">
+                        <img src="asset/images/icons/business-deal.png" alt="Active Job">
+                    </div>
+
+                    <div>
+                        <p>Active Jobs</p>
+                        <h2>8</h2>
+                    </div>
+                </div>
+
+                <!-- draft jobs -->
+                <div class="job-summary-card">
+                    <div class="job-summary-icon">
+                        <img src="asset/images/icons/file-text-black.svg" alt="Draft Jobs">
+                    </div>
+
+                    <div>
+                        <p>Draft Jobs</p>
+                        <h2>3</h2>
+                    </div>
+                </div>
+
+                <!-- closed jobs -->
+                <div class="job-summary-card">
+                    <div class="job-summary-icon">
+                        <img src="asset/images/icons/briefcase-x-black.png" alt="Closed Jobs">
+                    </div>
+
+                    <div>
+                        <p>Closed Jobs</p>
+                        <h2>4</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- filters -->
+            <section class="jobs-filter">
+                <form action="#" method="get" class="jobs-filter-form">
+
+                    <!-- search -->
+                    <div class="jobs-search">
+                        <label for="jobsearch">Search Job</label>
+
+                        <div class="jobs-search-input">
+                            <img src="asset/images/icons/search-black.svg" class="jobs-search-icon">
+
+                            <input type="text" id="jobsearch" name="jobsearch" placeholder="Search by job title">
+                        </div>
+                    </div>
+
+                    <!-- status -->
+                    <div class="jobs-filter-item">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="">All Status</option>
+                            <option value="Active">Active</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Closed">Closed</option>
+                        </select>
+                    </div>
+
+                    <!-- job type -->
+                    <div class="jobs-filter-item">
+                        <label for="jobtype">Job Type</label>
+                        <select id="jobtype" name="jobtype">
+                            <option value="">All Job Types</option>
+                            <option value="Full-Time">Full-Time</option>
+                            <option value="Part-Time">Part-Time</option>
+                            <option value="Contract">Contract</option>
+                            <option value="Internship">Internship</option>
+                        </select>
+                    </div>
+
+                    <!-- filter button -->
+                    <div class="jobs-filter-button-container">
+                        <button type="submit" class="jobs-filter-button">Filter</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- jobs table -->
+            <section class="jobs-table-card">
+
+                <!-- table heading -->
+                <div class="jobs-table-heading">
+                    <div>
+                        <h2>Your Job Posts</h2>
+                        <p>Manage your active, draft, and closed positions.</p>
+                    </div>
+
+                    <span>15 Jobs</span>
+                </div>
+
+                <!-- table -->
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Job Title</th>
+                                <th>Job Type</th>
+                                <th>Work Setup</th>
+                                <th>Applicants</th>
+                                <th>Date Posted</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- job 1 -->
+                            <tr>
+                                <td>
+                                    <div class="job-title-cell">
+                                        <div class="job-table-icon">
+                                            <img src="asset/images/icons/briefcase-business.svg" alt="Job Icon">
+                                        </div>
+
+                                        <div>
+                                            <strong>Senior Software Engineer</strong>
+                                            <span>Makati City</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Full-Time</td>
+                                <td>Hybrid</td>
+
+                                <td>
+                                    <a href="manageApplicants.html" class="applicant-count">32 Applicants</a>
+                                </td>
+
+                                <td>Aug 28, 2026</td>
+
+                                <td>
+                                    <span class="job-status status-active">Active</span>
+                                </td>
+
+                                <td>
+                                    <div class="job-actions">
+                                        <a href="manageApplicants.html" class="job-view-button">Applicants</a>
+
+                                        <button type="button" class="job-edit-button">Edit</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- job 2 -->
+                            <tr>
+                                <td>
+                                    <div class="job-title-cell">
+                                        <div class="job-table-icon">
+                                            <img src="asset/images/icons/briefcase-business.svg" alt="Job Icon">
+                                        </div>
+
+                                        <div>
+                                            <strong>Product Designer</strong>
+                                            <span>Taguig City</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Full-Time</td>
+                                <td>Remote</td>
+
+                                <td>
+                                    <a href="manageApplicants.html" class="applicant-count">18 Applicants</a>
+                                </td>
+
+                                <td>Aug 25, 2026</td>
+
+                                <td>
+                                    <span class="job-status status-active">Active</span>
+                                </td>
+
+                                <td>
+                                    <div class="job-actions">
+                                        <a href="manageApplicants.html" class="job-view-button">Applicants</a>
+
+                                        <button type="button" class="job-edit-button">Edit</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- job 3 -->
+                            <tr>
+                                <td>
+                                    <div class="job-title-cell">
+                                        <div class="job-table-icon">
+                                            <img src="asset/images/icons/briefcase-business.svg" alt="Job Icon">
+                                        </div>
+                                        <div>
+                                            <strong>Marketing Officer</strong>
+                                            <span>Pasig City</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Full-Time</td>
+                                <td>On-site</td>
+
+                                <td>
+                                    <a href="manageApplicants.html" class="applicant-count">25 Applicants</a>
+                                </td>
+
+                                <td>Aug 22, 2026</td>
+
+                                <td>
+                                    <span class="job-status status-active">Active</span>
+                                </td>
+
+                                <td>
+                                    <div class="job-actions">
+                                        <a href="manageApplicants.html" class="job-view-button">Applicants</a>
+
+                                        <button type="button" class="job-edit-button">Edit</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- job 4 -->
+                            <tr>
+                                <td>
+                                    <div class="job-title-cell">
+                                        <div class="job-table-icon">
+                                            <img src="asset/images/icons/briefcase-business.svg" alt="Job Icon">
+                                        </div>
+
+                                        <div>
+                                            <strong>Front-End Developer</strong>
+
+                                            <span>Quezon City</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Contract</td>
+                                <td>Remote</td>
+                                <td>—</td>
+                                <td>Not Published</td>
+
+                                <td>
+                                    <span class="job-status status-draft">Draft</span>
+                                </td>
+
+                                <td>
+                                    <div class="job-actions">
+                                        <button type="button" class="job-edit-button">Edit</button>
+
+                                        <button type="button" class="publish-button">Publish</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- job 5 -->
+                            <tr>
+                                <td>
+                                    <div class="job-title-cell">
+                                        <div class="job-table-icon">
+                                            <img src="asset/images/icons/briefcase-business.svg" alt="Job Icon">
+                                        </div>
+
+                                        <div>
+                                            <strong>HR Assistant</strong>
+
+                                            <span>Makati City</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Full-Time</td>
+                                <td>On-site</td>
+
+                                <td>
+                                    <a href="manageApplicants.html" class="applicant-count">41 Applicants</a>
+                                </td>
+
+                                <td>Jul 15, 2026</td>
+
+                                <td>
+                                    <span class="job-status status-closed">Closed</span>
+                                </td>
+
+                                <td>
+                                    <div class="job-actions">
+                                        <a href="manageApplicants.html" class="job-view-button">Applicants</a>
+
+                                        <button type="button" class="job-edit-button">Edit</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- pagination -->
+                <div class="jobs-pagination">
+                    <a href="#" class="pagination-disabled">Previous</a>
+                    <a href="#" class="current-page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- edit job -->
+        <dialog id="edit-job-dialog" class="jobs-modal" aria-labelledby="edit-job-title">
+            <h2 id="edit-job-title">Edit Job</h2>
+            <p>Update the details of this position.</p>
+
+            <form id="edit-job-form">
+                <label for="edit-title">Job Title</label>
+                <input type="text" id="edit-title" maxlength="100" required>
+
+                <label for="edit-location">Location</label>
+                <input type="text" id="edit-location" maxlength="150" required>
+
+                <label for="edit-type">Job Type</label>
+                <select id="edit-type" required>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-Time">Part-Time</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Internship">Internship</option>
+                </select>
+
+                <label for="edit-setup">Work Setup</label>
+                <select id="edit-setup" required>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Remote">Remote</option>
+                    <option value="On-site">On-site</option>
+                </select>
+
+                <div class="jobs-modal-actions">
+                    <button type="button" id="cancel-job-edit" class="modal-secondary">
+                        Cancel
+                    </button>
+
+                    <button type="submit" class="modal-primary">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- publish job -->
+        <dialog id="publish-job-dialog" class="jobs-modal jobs-modal-centered" aria-labelledby="publish-job-title" aria-describedby="publish-job-description">
+            <div class="jobs-modal-icon" aria-hidden="true">✓</div>
+            <h2 id="publish-job-title">Publish this job?</h2>
+            <p id="publish-job-description">
+                <strong id="job-to-publish"></strong>
+                will be marked as active.
+            </p>
+
+            <form method="dialog">
+                <div class="jobs-modal-actions">
+                    <button type="submit" value="cancel" class="modal-secondary" autofocus>
+                        Keep as Draft
+                    </button>
+
+                    <button type="submit" value="publish" class="modal-primary">
+                        Publish Job
+                    </button>
+                </div>
+            </form>
+        </dialog>
+
+        <p id="jobs-feedback" role="status"></p>
+
+        <!-- scripts -->
+        <script src="js/manageJobs.js"></script>
+    </body>
+</html>

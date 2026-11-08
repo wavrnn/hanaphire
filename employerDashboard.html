@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/dashboard.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Employer Dashboard</title>
+    </head>
+    <body>
+
+        <!-- dashboard header -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-container">
+
+                <!-- logo -->
+                <a href="employerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- employer navigation -->
+                <nav class="dashboard-nav">
+                    <a href="employerDashboard.html" class="nav-page active">Dashboard</a>
+                    <a href="findJobs.html" class="nav-page">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="manageApplicants.html" class="nav-page">Applicants</a>
+                    <a href="manageJobs.html" class="nav-page">Manage Jobs</a>
+                    <a href="companyProfile.html" class="nav-page">Company</a>
+                    <a href="messages.html?role=employer" class="nav-page">Messages</a>
+                </nav>
+
+                <!-- profile -->
+                <div class="employer-profile">
+                    <div class="profile-picture">
+                        <img src="asset/images/company/company-logo.png" alt="Company">
+                    </div>
+
+                    <div class="profile-name">
+                        <strong>Lorem Ipsum</strong>
+                        <span>Employer</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main dashboard -->
+        <main class="dashboard-main">
+
+            <!-- dashboard welcome -->
+            <section class="dashboard-welcome">
+                <div class="welcome-text">
+                    <h1>Welcome back, TechNova!</h1>
+                    <p>Here's what's happening with your hiring today.</p>
+                </div>
+
+                <div class="welcome-buttons">
+                    <a href="findJobs.html" class="dashboard-outline-button">
+                        <img src="asset/images/icons/search-blue.svg" alt="Find Talent" class="button-icon">
+                        Find Talent
+                    </a>
+
+                    <a href="postJob.html" class="dashboard-primary-button">
+                        <img src="asset/images/icons/briefcase-white.svg" alt="Post a Job" class="button-icon">
+                        Post a Job
+                    </a>
+                </div>
+            </section>
+
+            <!-- statistics -->
+            <section class="dashboard-stats">
+
+                <!-- active jobs -->
+                <div class="stat-box">
+                    <div class="dashboard-stat-icon">
+                        <img src="asset/images/icons/briefcase.svg" alt="Active Job">
+                    </div>
+
+                    <div class="dashboard-stat-content">
+                        <p>Active Jobs</p>
+                        <h2>8</h2>
+                        <a href="manageJobs.html">View Jobs</a>
+                    </div>
+                </div>
+
+                <!-- total applicants -->
+                <div class="stat-box">
+                    <div class="dashboard-stat-icon">
+                        <img src="asset/images/icons/file-user-white.svg" alt="Total Applicants">
+                    </div>
+
+                    <div class="dashboard-stat-content">
+                        <p>Total Applicants</p>
+                        <h2>124</h2>
+                        <a href="manageApplicants.html">View Applicants</a>
+                    </div>
+                </div>
+
+                <!-- shortlisted -->
+                <div class="stat-box">
+                    <div class="dashboard-stat-icon">
+                        <img src="asset/images/icons/clipboard-check.svg" alt="Shortlisted">
+                    </div>
+
+                    <div class="dashboard-stat-content">
+                        <p>Shortlisted</p>
+                        <h2>18</h2>
+                        <a href="manageApplicants.html">Review</a>
+                    </div>
+                </div>
+
+                <!-- hired -->
+                <div class="stat-box">
+                    <div class="dashboard-stat-icon">
+                        <img src="asset/images/icons/handshake-black.svg" alt="Hired">
+                    </div>
+
+                    <div class="dashboard-stat-content">
+                        <p>Hired</p>
+                        <h2>6</h2>
+                        <a href="manageApplicants.html">View Hires</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- dashboard content -->
+            <section class="dashboard-content">
+
+                <!-- recent applicants -->
+                <div class="dashboard-panel applicants-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Recent Applicants</h2>
+                            <p>Latest candidates who applied to your jobs.</p>
+                        </div>
+                        <a href="manageApplicants.html">View All</a>
+                    </div>
+
+                    <!-- applicant 1 -->
+                    <div class="applicant-row">
+                        <div class="applicant-picture">
+                            <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                        </div>
+
+                        <div class="applicant-info">
+                            <h3>Ryzza Mae Dizon</h3>
+                            <p>Software Engineer</p>
+                        </div>
+
+                        <div class="applicant-job">
+                            <span>Applied for</span>
+                            <strong>Senior Software Engineer</strong>
+                        </div>
+
+                        <span class="status-new">New</span>
+                    </div>
+
+                    <!-- applicant 2 -->
+                    <div class="applicant-row">
+                        <div class="applicant-picture">
+                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                        </div>
+
+                        <div class="applicant-info">
+                            <h3>Daniel Cruz</h3>
+                            <p>UI/UX Designer</p>
+                        </div>
+
+                        <div class="applicant-job">
+                            <span>Applied for</span>
+                            <strong>Product Designer</strong>
+                        </div>
+
+                        <span class="status-review">In Review</span>
+                    </div>
+
+                    <!-- applicant 3 -->
+                    <div class="applicant-row">
+                        <div class="applicant-picture">
+                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                        </div>
+
+                        <div class="applicant-info">
+                            <h3>Angela Reyes</h3>
+                            <p>Marketing Specialist</p>
+                        </div>
+
+                        <div class="applicant-job">
+                            <span>Applied for</span>
+                            <strong>Marketing Officer</strong>
+                        </div>
+
+                        <span class="status-shortlisted">Shortlisted</span>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="dashboard-right">
+
+                    <!-- active jobs -->
+                    <div class="dashboard-panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h2>Active Jobs</h2>
+                                <p>Your recently posted positions.</p>
+                            </div>
+                            <a href="manageJobs.html">View All</a>
+                        </div>
+
+                        <!-- job 1 -->
+                        <div class="job-dashboard-item">
+                            <div class="job-dashboard-icon">
+                                <img src="asset/images/dashboard/software-engineer.png" alt="Senior Software Engineer">
+                            </div>
+
+                            <div class="job-dashboard-info">
+                                <h3>Senior Software Engineer</h3>
+                                <p>32 Applicants</p>
+                            </div>
+
+                            <span class="active-job-status">Active</span>
+                        </div>
+
+                        <!-- job 2 -->
+                        <div class="job-dashboard-item">
+                            <div class="job-dashboard-icon">
+                                <img src="asset/images/dashboard/graphic.png" alt="Product Designer">
+                            </div>
+
+                            <div class="job-dashboard-info">
+                                <h3>Product Designer</h3>
+                                <p>18 Applicants</p>
+                            </div>
+
+                            <span class="active-job-status">Active</span>
+                        </div>
+
+                        <!-- job 3 -->
+                        <div class="job-dashboard-item">
+                            <div class="job-dashboard-icon">
+                                <img src="asset/images/dashboard/email.png" alt="Marketing Officer">
+                            </div>
+
+                            <div class="job-dashboard-info">
+                                <h3>Marketing Officer</h3>
+                                <p>25 Applicants</p>
+                            </div>
+
+                            <span class="active-job-status">Active</span>
+                        </div>
+                    </div>
+
+                    <!-- quick actions -->
+                    <div class="dashboard-panel quick-actions">
+                        <h2>Quick Actions</h2>
+                        <a href="postJob.html">
+                            <div class="quick-icon">
+                                <img src="asset/images/icons/plus.svg" alt="Post a Job">
+                            </div>
+
+                            <div>
+                                <strong>Post a New Job</strong>
+                                <span>Create a new job opportunity</span>
+                            </div>
+                        </a>
+
+                        <a href="findJobs.html">
+                            <div class="quick-icon">
+                                <img src="asset/images/icons/search-black.svg" alt="Find Talents">
+                            </div>
+
+                            <div>
+                                <strong>Find Candidates</strong>
+                                <span>Search qualified professionals</span>
+                            </div>
+                        </a>
+
+                        <a href="manageApplicants.html">
+                            <div class="quick-icon">
+                                <img src="asset/images/icons/clipboard-check.svg" alt="Review Applicants">
+                            </div>
+
+                            <div>
+                                <strong>Review Applicants</strong>
+                                <span>Manage job applications</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                        <span>HanapHire</span>
+                    </div>
+
+                    <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                        <a href="findJobs.html">Find Talent</a>
+                        <a href="postJob.html">Post a Job</a>
+                        <a href="howItWorks.html">How It Works</a>
+                        <a href="#">Browse Jobs</a>
+                        <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                        hanaphire@gmail.com
+                    </p>
+
+                    <p>
+                        <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                        +63 912 345 6789
+                    </p>
+
+                    <p>
+                        <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                        CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+    </body>
+</html>

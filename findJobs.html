@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/findJobs.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Find Talent</title>
+    </head>
+    <body>
+        <header>
+
+            <!-- header -->
+            <div class="header-container">
+
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+                
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- navigation -->
+                <nav>
+                    <a href="index.html" class="nav-page">Home</a>
+                    <a href="findJobs.html" class="nav-page active">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="howItWorks.html" class="nav-page">How It Works</a>
+                    <a href="about.html" class="nav-page">About</a>
+                    <a href="contact.html" class="nav-page">Contact</a>
+                    <a href="login.html" class="login-button">Login</a>
+                    <a href="register.html" class="register-button">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- page heading -->
+        <section class="find-heading">
+            <div class="find-heading-container">
+                <div class="find-heading-content">
+                    <h1>Find the Right Talent</h1>
+                    <p>Search and discover qualified professionals ready to join your team.</p>
+                </div>
+
+                <div class="find-heading-image">
+                    <img src="asset/images/findJobs/find-talent.png" alt="Find Talent">
+                </div>
+            </div>
+        </section>
+
+        <!-- search section -->
+        <section class="search-section">
+            <form class="search-box">
+                <div class="search-input">
+                    <img src="asset/images/icons/search-black.svg" alt="Search" class="search-icon">
+
+                    <input type="text" id="keyword" aria-label="Search candidates by name, skill, or job title" placeholder="Search by name, skill, or job title">
+                </div>
+
+
+                <div class="location-input">
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="location-icon">
+
+                    <input type="text" id="location" aria-label="Candidate location" placeholder="Location">
+                </div>
+
+
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </section>
+
+        <!-- main content -->
+        <main class="talent-container">
+
+            <!-- filters -->
+            <aside class="filters">
+                <h2>Filter Candidates</h2>
+
+                <!-- job category -->
+                <label for="category">Job Category</label>
+                <select id="category" name="category">
+                    <option value="" selected>All Categories</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Customer Service">Customer Service</option>
+                </select>
+
+                <!-- experience -->
+                <label for="experience">Experience Level</label>
+                <select id="experience" name="experience">
+                    <option value="" selected>All Experience Levels</option>
+                    <option value="entry">Less than 1 year</option>
+                    <option value="junior">1-2 years</option>
+                    <option value="mid">3-5 years</option>
+                    <option value="senior">6+ years</option>
+                </select>
+
+                <!-- employment type -->
+                <h3>Employment Type</h3>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="fulltime" name="employment" value="Full-Time">
+                    <label for="fulltime">Full Time</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" id="parttime" name="employment" value="Part-Time">
+                    <label for="parttime">Part-Time</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" id="remote" name="employment" value="Remote">
+                    <label for="remote">Remote</label>
+                </div>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" id="freelance" name="employment" value="Freelance">
+                    <label for="freelance">Freelance</label>
+                </div>
+
+                <!-- skills -->
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" name="skills" placeholder="Enter a skill">
+                
+                <button type="button" class="filter-button">Apply Filters</button>
+                <button type="button" class="clear-button">Clear Filters</button>
+            </aside>
+
+            <!-- candidate section -->
+            <section class="candidate-section">
+                <div class="candidate-heading">
+                    <div>
+                        <h2>Available Candidate</h2>
+                        <p id="result-count" aria-live="polite">Showing 6 qualified candidates</p>
+                    </div>
+
+                    <div class="sort-container">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort" name="sort">
+                            <option value="original">Original Order</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="experience">Experience: Highest First</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- candidate table -->
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Candidate</th>
+                                <th>Job Title</th>
+                                <th>Experience</th>
+                                <th>Location</th>
+                                <th>Skills</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- candidate 1: ryzza -->
+                            <tr data-category="Information Technology" data-employment="Full-Time Remote">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                                        <div>
+                                            <strong>Ryzza Mae Dizon</strong>
+                                            <span>ryzza@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Software Engineer</td>
+                                <td>14 Years</td>
+                                <td>Santa Maria, Bulacan, Philippines</td>
+                                <td>
+                                    <span class="skill">Figma</span>
+                                    <span class="skill">UI Design</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+                            
+                            <!-- candidate 2: john -->
+                            <tr data-category="Information Technology" data-employment="Part-Time Remote">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/candidate.png" alt="John Reyes">
+                                        <div>
+                                            <strong>John Reyes</strong>
+                                            <span>john@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Web Developer</td>
+                                <td>4 Years</td>
+                                <td>Quezon City</td>
+                                <td>
+                                    <span class="skill">HTML</span>
+                                    <span class="skill">CSS</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+
+                            <!-- candidate 3: angela -->
+                            <tr data-category="Marketing" data-employment="Full-Time">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/candidate.png" alt="Angela Cruz">
+                                        <div>
+                                            <strong>Angela Cruz</strong>
+                                            <span>angela@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Marketing Specialist</td>
+                                <td>2 Years</td>
+                                <td>Pasig City</td>
+                                <td>
+                                    <span class="skill">SEO</span>
+                                    <span class="skill">Marketing</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+
+                            <!-- candidate 4: paolo -->
+                            <tr data-category="Finance" data-employment="Freelance">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/candidate.png" alt="Paolo Mendoza">
+                                        <div>
+                                            <strong>Paolo Mendoza</strong>
+                                            <span>paolo@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Accountant</td>
+                                <td>5 Years</td>
+                                <td>Manila</td>
+                                <td>
+                                    <span class="skill">Accounting</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+
+                            <!-- candidate 5: sophia -->
+                            <tr data-category="Human Resources" data-employment="Full-Time">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/candidate.png" alt="Sophia Garcia">
+                                        <div>
+                                            <strong>Sophia Garcia</strong>
+                                            <span>sophia@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>HR Assistant</td>
+                                <td>2 Years</td>
+                                <td>Taguig City</td>
+                                <td>
+                                    <span class="skill">Recruitment</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+
+                            <!-- candidate 6: carlo -->
+                            <tr data-category="Customer Service" data-employment="Part-Time Remote">
+                                <td>
+                                    <div class="candidate-name">
+                                        <img src="asset/images/candidates/candidate.png" alt="Carlo Dela Cruz">
+                                        <div>
+                                            <strong>Carlo Dela Cruz</strong>
+                                            <span>carlo@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Customer Service</td>
+                                <td>3 Years</td>
+                                <td>Cebu City</td>
+                                <td>
+                                    <span class="skill">Communication</span>
+                                </td>
+                                <td>
+                                    <a href="candidateProfile.html" class="view-button">View Profile</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- pagination -->
+                <div class="pagination">
+                    <a href="#">Previous</a>
+                    <a href="#" class="active-page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="findJobs.html">Find Talent</a>
+                <a href="postJob.html">Post a Job</a>
+                <a href="howItWorks.html">How It Works</a>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/findJobs.js"></script>
+    </body>
+</html>

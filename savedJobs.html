@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/jobSeekerDashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/savedJobs.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Saved Jobs</title>
+    </head>
+    <body>
+
+        <!-- job seeker header -->
+        <header class="jobseeker-header">
+            <div class="jobseeker-header-container">
+
+                <!-- logo -->
+                <a href="jobSeekerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.PNG" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- job seeker navigation -->
+                <nav class="jobseeker-nav">
+                    <a href="jobSeekerDashboard.html">Dashboard</a>
+                    <a href="findJobs.html">Find Jobs</a>
+                    <a href="savedJobs.html" class="active">Saved Jobs</a>
+                    <a href="myApplications.html">My Applications</a>
+                    <a href="messages.html">Messages</a>
+                    <a href="candidateProfile.html">Profile</a>
+                </nav>
+
+                <!-- user profile -->
+                <div class="jobseeker-profile">
+                    <div class="jobseeker-picture">
+                        <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                    </div>
+                    <div class="jobseeker-profile-name">
+                        <strong>Ryzza Mae Dizon</strong>
+                        <span>Job Seeker</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="saved-jobs-main">
+
+            <!-- page heading -->
+            <section class="saved-jobs-heading">
+                <div>
+                    <h1>Saved Jobs</h1>
+                    <p>Review the opportunities you saved and apply whenever you're ready.</p>
+                </div>
+
+                <a href="#" class="browse-more-button">
+                    <img src="asset/images/icons/search.svg">
+                    Browse More Jobs
+                </a>
+            </section>
+
+            <!-- summary -->
+            <section class="saved-summary">
+                <div>
+                    <strong id="saved-count">4</strong>
+                    <span>Saved Jobs</span>
+                </div>
+
+                <p>Keep your favorite opportunities in one place so you can easily review them later.</p>
+            </section>
+
+            <!-- search and filter -->
+            <section class="saved-filter">
+                <form action="#" method="get" class="saved-filter-form">
+
+                    <!-- search -->
+                    <div class="saved-search">
+                        <label for="search">Search Saved Jobs</label>
+
+                        <div class="saved-search-input">
+                            <img src="asset/images/icons/search-black.svg" alt="">
+
+                            <input type="text" id="search" name="search" placeholder="Search job title or company">
+                        </div>
+                    </div>
+
+                    <!-- job type -->
+                    <div class="saved-filter-item">
+                        <label for="jobtype">Job Type</label>
+                        <select id="jobtype" name="jobtype">
+                            <option value="">All Job Types</option>
+                            <option value="Full-Time">Full-Time</option>
+                            <option value="Part-Time">Part-Time</option>
+                            <option value="Contract">Contract</option>
+                            <option value="Internship">Internship</option>
+                        </select>
+                    </div>
+
+                    <!-- work setup -->
+                    <div class="saved-filter-item">
+                        <label for="worksetup">Work Setup</label>
+                        <select id="worksetup" name="worksetup">
+                            <option value="">All Work Setups</option>
+                            <option value="Remote">Remote</option>
+                            <option value="Hybrid">Hybrid</option>
+                            <option value="On-site">On-site</option>
+                        </select>
+                    </div>
+
+                    <!-- filter button -->
+                    <div class="saved-filter-button-container">
+                        <button type="submit" class="saved-filter-button">
+                            Filter
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- saved jobs content -->
+            <section class="saved-content">
+
+                <!-- saved jobs list -->
+                <div class="saved-jobs-list">
+                    <p id="saved-results" role="status"></p>
+                    <article class="saved-job-card" data-jobtype="Full-Time" data-worksetup="Hybrid">
+                        <div class="saved-company-logo">
+                            <img src="asset/images/company/technova.png">
+                        </div>
+
+                        <p id="saved-empty" role="status" hidden>
+                            You have no saved jobs.
+                        </p>
+
+                        <!-- job 1 -->
+                        <div class="saved-job-information">
+                            <div class="saved-job-top">
+                                <div>
+                                    <h2>Senior Software Engineer</h2>
+                                    <p class="saved-company">TechNova Solutions</p>
+                                </div>
+
+                                <button type="button" class="remove-button">
+                                    <img src="asset/images/icons/bookmark-gray.png">
+                                    Remove
+                                </button>
+                            </div>
+
+                            <div class="saved-job-details">
+                                <span>Makati City</span>
+                                <span>Hybrid</span>
+                                <span>Full-Time</span>
+                            </div>
+
+                            <p class="saved-salary">₱120,000 - ₱150,000 / month</p>
+                            <p class="saved-description">
+                                Join our engineering team and help develop
+                                scalable web applications and modern
+                                digital solutions.
+                            </p>
+
+                            <div class="saved-job-bottom">
+                                <span>Saved 2 days ago</span>
+
+                                <div class="saved-actions">
+                                    <a href="#" class="details-button">View Details</a>
+                                    <button type="button" class="saved-apply-button">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- job 2 -->
+                    <article class="saved-job-card" data-jobtype="Full-Time" data-worksetup="Remote">
+                        <div class="saved-company-logo">
+                            <img src="asset/images/company/digitalworks.png">
+                        </div>
+
+                        <div class="saved-job-information">
+                            <div class="saved-job-top">
+                                <div>
+                                    <h2>Front-End Developer</h2>
+                                    <p class="saved-company">DigitalWorks PH</p>
+                                </div>
+
+                                <button type="button" class="remove-button">
+                                    <img src="asset/images/icons/bookmark-gray.png">
+                                    Remove
+                                </button>
+                            </div>
+
+                            <div class="saved-job-details">
+                                <span>Taguig City</span>
+                                <span>Remote</span>
+                                <span>Full-Time</span>
+                            </div>
+
+                            <p class="saved-salary">₱80,000 - ₱110,000 / month</p>
+                            <p class="saved-description">
+                                Develop responsive and user-friendly
+                                interfaces for web applications using
+                                modern front-end technologies.
+                            </p>
+
+                            <div class="saved-job-bottom">
+                                <span>Saved 3 days ago</span>
+
+                                <div class="saved-actions">
+                                    <a href="#" class="details-button">View Details</a>
+                                    <button type="button" class="saved-apply-button">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- job 3 -->
+                    <article class="saved-job-card">
+                        <div class="saved-company-logo" data-jobtype="Full-Time" data-worksetup="Hybrid">
+                            <img src="asset/images/company/cloudcore.png">
+                        </div>
+
+                        <div class="saved-job-information">
+                            <div class="saved-job-top">
+                                <div>
+                                    <h2>Full Stack Developer</h2>
+                                    <p class="saved-company">CloudCore Technologies</p>
+                                </div>
+
+                                <button type="button" class="remove-button">
+                                    <img src="asset/images/icons/bookmark-gray.png">
+                                    Remove
+                                </button>
+                            </div>
+
+                            <div class="saved-job-details">
+                                <span>Pasig City</span>
+                                <span>Hybrid</span>
+                                <span>Full-Time</span>
+                            </div>
+
+                            <p class="saved-salary">₱100,000 - ₱130,000 / month</p>
+                            <p class="saved-description">
+                                Work with our development team to build
+                                reliable front-end and back-end systems
+                                for growing digital products.
+                            </p>
+
+                            <div class="saved-job-bottom">
+                                <span>Saved 5 days ago</span>
+
+                                <div class="saved-actions">
+                                    <a href="#" class="details-button">View Details</a>
+                                    <button type="button" class="saved-apply-button">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- job 4 -->
+                    <article class="saved-job-card">
+                        <div class="saved-company-logo" data-jobtype="Full-Time" data-worksetup="On-site">
+                            <img src="asset/images/company/innovatech.png">
+                        </div>
+                        
+                        <div class="saved-job-information">
+                            <div class="saved-job-top">
+                                <div>
+                                    <h2>Software Developer</h2>
+                                    <p class="saved-company">Innovatech Systems</p>
+                                </div>
+
+                                <button type="button" class="remove-button">
+                                    <img src="asset/images/icons/bookmark-gray.png">
+                                    Remove
+                                </button>
+                            </div>
+
+                            <div class="saved-job-details">
+                                <span>Quezon City</span>
+                                <span>On-site</span>
+                                <span>Full-Time</span>
+                            </div>
+
+                            <p class="saved-salary">₱70,000 - ₱95,000 / month</p>
+                            <p class="saved-description">
+                                Design, develop, and maintain software
+                                applications while working with a
+                                collaborative development team.
+                            </p>
+
+                            <div class="saved-job-bottom">
+                                <span>Saved 1 week ago</span>
+
+                                <div class="saved-actions">
+                                    <a href="#" class="details-button">View Details</a>
+                                    <button type="button" class="saved-apply-button">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- right side -->
+                <aside class="saved-sidebar">
+
+                    <!-- profile card -->
+                    <div class="saved-side-card">
+                        <h2>Improve Your Matches</h2>
+                        <p>
+                            Complete your profile so HanapHire can
+                            recommend opportunities that better match
+                            your skills and experience.
+                        </p>
+
+                        <div class="saved-progress-heading">
+                            <span>Profile Completion</span>
+                            <strong>80%</strong>
+                        </div>
+
+                        <div class="saved-progress">
+                            <div class="saved-progress-bar"></div>
+                        </div>
+
+                        <a href="candidateProfile.html" class="profile-button">Complete Profile</a>
+                    </div>
+
+                    <!-- job search tips -->
+                    <div class="saved-side-card">
+                        <h2>Job Search Tips</h2>
+
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <img src="asset/images/icons/user.svg">
+                            </div>
+
+                            <p>Keep your profile and skills updated.</p>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <img src="asset/images/icons/file-text-black.svg">
+                            </div>
+
+                            <p>Review the job requirements before applying.</p>
+                        </div>
+
+                        <div class="tip-item">
+                            <div class="tip-icon">
+                                <img src="asset/images/icons/check-black.png">
+                            </div>
+
+                            <p>Apply to opportunities that match your experience.</p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- pagination -->
+            <div class="saved-pagination">
+                <a href="#" class="pagination-disabled">Previous</a>
+                <a href="#" class="current-page">1</a>
+                <a href="#">2</a>
+                <a href="#">Next</a>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- view details -->
+        <dialog id="saved-details-dialog" class="saved-modal" aria-labelledby="saved-details-title">
+            <h2 id="saved-details-title">Job Details</h2>
+            <p>Review the available information for this position.</p>
+
+            <dl id="saved-details-content"></dl>
+
+            <form method="dialog" class="saved-modal-actions">
+                <button type="submit" class="saved-modal-primary">
+                    Done
+                </button>
+            </form>
+        </dialog>
+
+        <!-- apply / remove confirmation -->
+        <dialog id="saved-action-dialog" class="saved-modal saved-modal-centered" aria-labelledby="saved-action-title" aria-describedby="saved-action-description">
+            <div id="saved-action-icon" aria-hidden="true">?</div>
+            <h2 id="saved-action-title"></h2>
+            <p id="saved-action-description"></p>
+
+            <form method="dialog" class="saved-modal-actions">
+                <button type="submit" value="cancel" autofocus>
+                    Cancel
+                </button>
+
+                <button type="submit" value="confirm" id="saved-action-confirm">
+                    Confirm
+                </button>
+            </form>
+        </dialog>
+
+        <!-- scripts -->
+        <script src="js/jobSeekerActions.js"></script>
+        <script src="js/savedJobs.js"></script>
+        <script src="js/savedJobButtons.js"></script>
+    </body>
+</html>

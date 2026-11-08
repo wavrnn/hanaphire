@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/contact.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Contact</title>
+    </head>
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="header-container">
+
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+                
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- navigation -->
+                <nav>
+                    <a href="index.html" class="nav-page">Home</a>
+                    <a href="findJobs.html" class="nav-page">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="howItWorks.html" class="nav-page">How It Works</a>
+                    <a href="about.html" class="nav-page">About</a>
+                    <a href="contact.html" class="nav-page active">Contact</a>
+                    <a href="login.html" class="login-button">Login</a>
+                    <a href="register.html" class="register-button">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- contact hero -->
+        <section class="contact-hero">
+            <div class="contact-hero-container">
+
+                <!-- contact heading -->
+                <div class="contact-heading">
+                    <p class="contact-label">We're Here to Help.</p>
+                    <h1>Contact Us</h1>
+                    <p class="contact-description">Have a question or need assistance? We'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-hero-image">
+                    <img src="asset/images/contact/contact-hero.png"alt="Contact HanapHire">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact main section -->
+        <main class="contact-container">
+
+            <!-- get in touch -->
+            <section class="contact-information">
+                <h2>Get in Touch</h2>
+                <p class="contact-intro">Reach out to us through any of the following channels.</p>
+
+                <!-- email -->
+                <div class="contact-item">
+                    <div class="contact-info-icon">
+                        <img src="asset/images/icons/email-blue.png" alt="Email">
+                    </div>
+
+                    <div class="contact-item-text">
+                        <h3>Email Us</h3>
+                        <p>hanaphire@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- phone -->
+                <div class="contact-item">
+                    <div class="contact-info-icon">
+                        <img src="asset/images/icons/phone-call-blue.png" alt="Phone">
+                    </div>
+
+                    <div class="contact-item-text">
+                        <h3>Call Us</h3>
+                        <p>+63 912 345 6789</p>
+                    </div>
+                </div>
+
+                <!-- address -->
+                <div class="contact-item">
+                    <div class="contact-info-icon">
+                        <img src="asset/images/icons/maps-and-flags-blue.png" alt="Location">
+                    </div>
+
+                    <div class="contact-item-text">
+                        <h3>Office Address</h3>
+                        <p>CICT Bldg, NEUST Sumacab <br>Campus, Cabanatuan City, Nueva Ecija</p>
+                    </div>
+                </div>
+
+                <!-- business hours -->
+                <div class="contact-item">
+
+                    <div class="contact-info-icon">
+                        <img src="asset/images/icons/clock-blue.png" alt="Business Hours">
+                    </div>
+
+                    <div class="contact-item-text">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday<br>8:00 AM - 5:00 PM PHT
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- send message -->
+            <section class="message-section">
+                <h2>Send us a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                <form action="#" method="POST" class="contact-form">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" maxlength="100" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" maxlength="150" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Type your message here..." maxlength="1000" aria-describedby="message-count" required></textarea>
+
+                    <p id="message-count">0 / 1000 characters</p>
+
+                    <button type="submit" class="send-button">
+                        <img src="asset/images/icons/send-white.png" alt="Send" class="button-icon">
+                        Send Message
+                    </button>
+
+                    <button type="button" id="clear-form">
+                        Clear Form
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="findJobs.html">Find Talent</a>
+                <a href="postJob.html">Post a Job</a>
+                <a href="howItWorks.html">How It Works</a>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <dialog id="message-success" aria-labelledby="message-success-title" aria-describedby="message-success-description">
+            <div class="message-success-icon" aria-hidden="true">✓</div>
+            <h2 id="message-success-title">Message sent!</h2>
+            <p id="message-success-description">
+                Thank you, <strong id="message-sender"></strong>.
+                We've received your message.
+            </p>
+
+            <button type="button" id="close-message-success" autofocus>
+                Done
+            </button>
+        </dialog>
+
+        <dialog id="clear-dialog" aria-labelledby="clear-dialog-title" aria-describedby="clear-dialog-description">
+            <div class="clear-dialog-icon" aria-hidden="true">!</div>
+            <h2 id="clear-dialog-title">Clear this form?</h2>
+            <p id="clear-dialog-description">
+                All the details you entered will be removed.
+                This cannot be undone.
+            </p>
+
+            <form method="dialog" class="clear-dialog-actions">
+                <button type="submit" value="cancel" class="keep-editing" autofocus>
+                    Keep Editing
+                </button>
+
+                <button type="submit" value="clear" class="confirm-clear">
+                    Clear Form
+                </button>
+            </form>
+        </dialog>
+
+        <!-- scripts -->
+        <script src="js/contact.js"></script>
+    </body>
+</html>

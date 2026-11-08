@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/jobSeekerDashboard.css">
+        <link rel="stylesheet" href="css/pages/messages.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Messages</title>
+    </head>
+    <body>
+
+        <!-- job seeker header -->
+        <header class="jobseeker-header">
+            <div class="jobseeker-header-container">
+
+                <!-- logo -->
+                <a href="jobSeekerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.PNG" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- job seeker navigation -->
+                <nav class="jobseeker-nav">
+                    <a href="jobSeekerDashboard.html">Dashboard</a>
+                    <a href="findJobs.html">Find Jobs</a>
+                    <a href="savedJobs.html">Saved Jobs</a>
+                    <a href="myApplications.html">My Applications</a>
+                    <a href="messages.html" class="active" aria-current="page">Messages</a>
+                    <a href="candidateProfile.html">Profile</a>
+                </nav>
+
+                <!-- user profile -->
+                <div class="jobseeker-profile">
+                    <div class="jobseeker-picture">
+                        <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                    </div>
+                    <div class="jobseeker-profile-name">
+                        <strong>Ryzza Mae Dizon</strong>
+                        <span>Job Seeker</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- messages page -->
+        <main class="messages-main">
+            <div class="messages-page-heading">
+                <div>
+                    <h1>Messages</h1>
+                    <p>Stay connected with employers and career opportunities.</p>
+                </div>
+
+                <span class="messages-account">Job Seeker Inbox</span>
+            </div>
+
+            <section class="messages-workspace" aria-label="Messages">
+
+                <!-- inbox folders -->
+                <aside class="messages-folders" aria-label="Message folders">
+                    <p class="messages-folder-label">YOUR MAILBOX</p>
+
+                    <button type="button" class="message-folder active" data-folder="inbox" aria-pressed="true">
+                        <span>Inbox</span>
+                        <span id="inbox-count" class="folder-count">0</span>
+                    </button>
+
+                    <button type="button" class="message-folder" data-folder="unread" aria-pressed="false">
+                        <span>Unread</span>
+                        <span id="unread-count" class="folder-count">0</span>
+                    </button>
+
+                    <button type="button" class="message-folder" data-folder="sent" aria-pressed="false">
+                        <span>Sent</span>
+                    </button>
+
+                    <div class="messages-sidebar-note">
+                        <strong>A good conversation opens doors.</strong>
+                        <p>Keep your messages clear and professional.</p>
+                    </div>
+                </aside>
+
+                <!-- conversation list -->
+                <section class="messages-conversations" aria-labelledby="mailbox-title">
+
+                    <div class="conversation-list-heading">
+                        <h2 id="mailbox-title">Inbox</h2>
+
+                        <div class="messages-search">
+                            <img src="asset/images/icons/search-black.svg" alt="">
+
+                            <input type="search" id="message-search" placeholder="Search messages" aria-label="Search messages">
+                        </div>
+                    </div>
+
+                    <div id="conversation-list">
+                        <p class="messages-list-empty">
+                            Your conversations will appear here.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- selected conversation -->
+                <section class="messages-chat" aria-label="Selected conversation">
+
+                    <div id="chat-placeholder" class="chat-placeholder">
+                        <div class="chat-placeholder-icon" aria-hidden="true">
+                            ✉
+                        </div>
+
+                        <h2>Your conversations, all in one place</h2>
+                        <p>Select a conversation to read messages and send a reply.</p>
+                    </div>
+
+                    <div id="chat-content" hidden>
+                        <div class="chat-heading">
+                            <div class="chat-avatar" id="chat-avatar" aria-hidden="true"></div>
+
+                            <div>
+                                <h2 id="chat-name"></h2>
+                                <p id="chat-subject"></p>
+                            </div>
+                        </div>
+
+                        <!-- messages will be added here -->
+                        <div id="chat-messages" role="log" aria-label="Conversation messages" aria-live="polite"></div>
+
+                        <!-- reply form -->
+                        <form id="message-form">
+                            <label for="message-reply">Your reply</label>
+
+                            <textarea id="message-reply" rows="3" maxlength="1000" placeholder="Write your message..." required></textarea>
+
+                            <div class="message-compose-bottom">
+                                <span id="reply-count">0 / 1000</span>
+
+                                <button type="submit" id="send-message">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+
+            <p id="messages-feedback" role="status"></p>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <dialog id="apply-job-dialog" aria-labelledby="apply-job-title" aria-describedby="apply-job-description">
+            <div class="apply-dialog-icon" aria-hidden="true">✓</div>
+            <h2 id="apply-job-title">Apply for this position?</h2>
+            <p id="apply-job-description">
+                Confirm your application for
+                <strong id="application-job-name"></strong>.
+            </p>
+
+            <form method="dialog" class="apply-dialog-actions">
+                <button type="submit" value="cancel" autofocus>
+                    Cancel
+                </button>
+
+                <button type="submit" value="apply" class="confirm-application">
+                    Confirm Application
+                </button>
+            </form>
+        </dialog>
+
+        <script src="js/messages.js"></script>
+    </body>
+</html>

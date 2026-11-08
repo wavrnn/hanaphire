@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/jobSeekerDashboard.css">
+        <link rel="stylesheet" href="css/pages/myApplications.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | My Applications</title>
+    </head>
+    <body>
+
+        <!-- job seeker header -->
+        <header class="jobseeker-header">
+            <div class="jobseeker-header-container">
+
+                <!-- logo -->
+                <a href="jobSeekerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.PNG" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- job seeker navigation -->
+                <nav class="jobseeker-nav">
+                    <a href="jobSeekerDashboard.html">Dashboard</a>
+                    <a href="findJobs.html">Find Jobs</a>
+                    <a href="savedJobs.html">Saved Jobs</a>
+                    <a href="myApplications.html" class="active" aria-current="page">My Applications</a>
+                    <a href="messages.html">Messages</a>
+                    <a href="candidateProfile.html">Profile</a>
+                </nav>
+
+                <!-- user profile -->
+                <div class="jobseeker-profile">
+                    <div class="jobseeker-picture">
+                        <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+                    </div>
+                    <div class="jobseeker-profile-name">
+                        <strong>Ryzza Mae Dizon</strong>
+                        <span>Job Seeker</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main dashboard -->
+        <main class="applications-main">
+            <section class="applications-heading">
+                <h1>My Applications</h1>
+                <p>Keep track of your applications and their latest status.</p>
+            </section>
+
+            <form class="applications-filter">
+                <div>
+                    <label for="application-search">Search Applications</label>
+
+                    <div class="applications-search">
+                        <img src="asset/images/icons/search-black.svg" alt="">
+
+                        <input type="search" id="application-search" placeholder="Search job title or company">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="application-status">Status</label>
+
+                    <select id="application-status">
+                        <option value="">All Statuses</option>
+                        <option value="Submitted">Submitted</option>
+                        <option value="In Review">In Review</option>
+                        <option value="Interview">Interview</option>
+                    </select>
+                </div>
+
+                <button type="submit">Filter</button>
+            </form>
+
+            <section class="applications-panel" aria-labelledby="applications-title">
+                <div class="applications-panel-heading">
+                    <h2 id="applications-title">Application History</h2>
+                    <p id="application-count" role="status">
+                        Showing 3 applications
+                    </p>
+                </div>
+
+                <div class="applications-table-scroll">
+                    <table class="applications-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Job Title</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Date Applied</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr data-status="In Review">
+                                <td>Software Engineer</td>
+                                <td>TechNova Solutions</td>
+                                <td>Sep 2, 2026</td>
+                                <td>
+                                    <span class="application-badge badge-review">
+                                        In Review
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr data-status="Interview">
+                                <td>Web Developer</td>
+                                <td>PixelPoint Inc.</td>
+                                <td>Aug 30, 2026</td>
+                                <td>
+                                    <span class="application-badge badge-interview">
+                                        Interview
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr data-status="Submitted">
+                                <td>Junior Developer</td>
+                                <td>WebWorks PH</td>
+                                <td>Aug 25, 2026</td>
+                                <td>
+                                    <span class="application-badge badge-submitted">
+                                        Submitted
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>     
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/jobSeekerActions.js"></script>
+        <script src="js/myApplications.js"></script>
+    </body>
+</html>

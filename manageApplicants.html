@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/manageApplicants.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Manage Applicants</title>
+    </head>
+    <body>
+
+        <!-- dashboard header -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-container">
+
+                <!-- logo -->
+                <a href="employerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- employer navigation -->
+                <nav class="dashboard-nav">
+                    <a href="employerDashboard.html" class="nav-page">Dashboard</a>
+                    <a href="findJobs.html" class="nav-page">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="manageApplicants.html" class="nav-page active">Applicants</a>
+                    <a href="manageJobs.html" class="nav-page">Manage Jobs</a>
+                    <a href="companyProfile.html" class="nav-page">Company</a>
+                    <a href="messages.html?role=employer" class="nav-page">Messages</a>
+                </nav>
+
+                <!-- employer profile -->
+                <div class="employer-profile">
+                    <div class="profile-picture">
+                        <img src="asset/images/company/company-logo.png" alt="Company">
+                    </div>
+
+                    <div class="profile-name">
+                        <strong>Lorem Ipsum</strong>
+                        <span>Employer</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="applicants-main">
+
+            <!-- page heading -->
+            <section class="applicants-heading">
+                <div>
+                    <h1>Manage Applicants</h1>
+                    <p>Review and manage candidates who applied to your job opportunities.</p>
+                </div>
+
+                <a href="findJobs.html" class="find-candidate-button">
+                    <img src="asset/images/icons/search.svg" alt="find-candidate-button" class="button-icon">
+                    Find Candidates
+                </a>
+            </section>
+
+            <!-- applicant summary -->
+            <section class="applicant-summary">
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <img src="asset/images/icons/file-user-white.svg" alt="Total Applicant">
+                    </div>
+
+                    <div>
+                        <p>Total Applicants</p>
+                        <h2 id="total-applicants">5</h2>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <img src="asset/images/icons/file-text-black.svg" alt="New Applications">
+                    </div>
+
+                    <div>
+                        <p>New Applications</p>
+                        <h2 id="new-applicants">2</h2>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <img src="asset/images/icons/clipboard-check.svg" alt="Shortlisted">
+                    </div>
+
+                    <div>
+                        <p>Shortlisted</p>
+                        <h2 id="shortlisted-applicants">1</h2>
+                    </div>
+
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <img src="asset/images/icons/handshake-black.svg" alt="Hired">
+                    </div>
+
+                    <div>
+                        <p>Hired</p>
+                        <h2 id="hired-applicants">1</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- filters -->
+            <section class="applicant-filter">
+                <form action="#" method="get" class="filter-form">
+
+                    <!-- search -->
+                    <div class="filter-search">
+                        <label for="search">Search Applicant</label>
+
+                        <div class="search-input">
+                            <img src="asset/images/icons/search-black.svg" alt="" class="search-icon">
+
+                            <input type="text" id="search" name="search" placeholder="Search by name or position">
+                        </div>
+                    </div>
+
+                    <!-- job -->
+                    <div class="filter-item">
+                        <label for="job">Job Position</label>
+                        <select id="job" name="job">
+                            <option value="">All Jobs</option>
+                            <option value="Senior Software Engineer">Senior Software Engineer</option>
+                            <option value="Product Designer">Product Designer</option>
+                            <option value="Marketing Officer">Marketing Officer</option>
+                        </select>
+                    </div>
+
+                    <!-- status -->
+                    <div class="filter-item">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="">All Status</option>
+                            <option value="New">New</option>
+                            <option value="In Review">In Review</option>
+                            <option value="Shortlisted">Shortlisted</option>
+                            <option value="Hired">Hired</option>
+                        </select>
+                    </div>
+
+                    <!-- filter button -->
+                    <div class="filter-button-container">
+                        <button type="submit" class="filter-button">Filter</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- applicants table -->
+            <section class="applicants-table-card">
+                <div class="table-heading">
+                    <div>
+                        <h2>Applicants</h2>
+                        <p>Showing applicants from your active job posts.</p>
+                    </div>
+
+                    <span id="applicant-count">5 Applicants</span>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Applicant</th>
+                                <th>Applied Position</th>
+                                <th>Date Applied</th>
+                                <th>Experience</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- applicant 1 -->
+                            <tr>
+                                <td>
+                                    <div class="table-applicant">
+                                        <div class="table-profile">
+                                            <img src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizzon">
+                                        </div>
+
+                                        <div>
+                                            <strong>Ryzza Mae Dizon</strong>
+                                            <span>ryzza@email.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Senior Software Engineer</td>
+                                <td>Sep 2, 2026</td>
+                                <td>14 Years</td>
+
+                                <td>
+                                    <span class="applicant-status status-new">New</span>
+                                </td>
+
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="candidateProfile.html"class="view-button">View</a>
+
+                                        <button type="button" class="shortlist-button">
+                                            Shortlist
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- applicant 2 -->
+                            <tr>
+                                <td>
+                                    <div class="table-applicant">
+                                        <div class="table-profile">
+                                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                                        </div>
+
+                                        <div>
+                                            <strong>Daniel Cruz</strong>
+                                            <span>daniel.cruz@email.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Product Designer</td>
+                                <td>Sep 1, 2026</td>
+                                <td>4 Years</td>
+
+                                <td>
+                                    <span class="applicant-status status-review">In Review</span>
+                                </td>
+
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="candidateProfile.html"class="view-button">View</a>
+
+                                        <button type="button"class="shortlist-button">Shortlist</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- applicant 3 -->
+                            <tr>
+                                <td>
+                                    <div class="table-applicant">
+                                        <div class="table-profile">
+                                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                                        </div>
+
+                                        <div>
+                                            <strong>Angela Reyes</strong>
+                                            <span>angela.reyes@email.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Marketing Officer</td>
+                                <td>Aug 31, 2026</td>
+                                <td>3 Years</td>
+
+                                <td>
+                                    <span class="applicant-status status-shortlisted">Shortlisted</span>
+                                </td>
+
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="candidateProfile.html" class="view-button">View</a>
+
+                                        <button type="button"class="hire-button">Hire</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- applicant 4 -->
+                            <tr>
+                                <td>
+                                    <div class="table-applicant">
+                                        <div class="table-profile">
+                                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                                        </div>
+
+                                        <div>
+                                            <strong>Joshua Lim</strong>
+                                            <span>joshua.lim@email.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Senior Software Engineer</td>
+                                <td>Aug 30, 2026</td>
+                                <td>6 Years</td>
+
+                                <td>
+                                    <span class="applicant-status status-hired">Hired</span>
+                                </td>
+
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="candidateProfile.html"class="view-button">View</a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- applicant 5 -->
+                            <tr>
+                                <td>
+                                    <div class="table-applicant">
+                                        <div class="table-profile">
+                                            <img src="asset/images/candidates/candidate.png" alt="Candidate">
+                                        </div>
+
+                                        <div>
+                                            <strong>Camille Garcia</strong>
+                                            <span>camille.garcia@email.com</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>Product Designer</td>
+                                <td>Aug 29, 2026</td>
+                                <td>2 Years</td>
+
+                                <td>
+                                    <span class="applicant-status status-new">New</span>
+                                </td>
+
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="candidateProfile.html" class="view-button">View</a>
+
+                                        <button type="button" class="shortlist-button">Shortlist</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- pagination -->
+                <div class="pagination">
+                    <a href="#" class="pagination-disabled">Previous</a>
+                    <a href="#" class="current-page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                        <a href="findJobs.html">Find Talent</a>
+                        <a href="postJob.html">Post a Job</a>
+                        <a href="howItWorks.html">How It Works</a>
+                        <a href="#">Browse Jobs</a>
+                        <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Company</h3>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                        hanaphire@gmail.com
+                    </p>
+
+                    <p>
+                        <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                        +63 912 345 6789
+                    </p>
+
+                    <p>
+                        <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                        CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <dialog  id="hire-dialog" aria-labelledby="hire-dialog-title" aria-describedby="hire-dialog-description">
+            <div class="hire-dialog-icon" aria-hidden="true">✓</div>
+            <h2 id="hire-dialog-title">Confirm hiring?</h2>
+            <p id="hire-dialog-description">
+                Mark <strong id="hire-applicant-name"></strong>
+                as hired? Their application status will be updated.
+            </p>
+
+            <form method="dialog" class="hire-dialog-actions">
+                <button type="submit" value="cancel" class="cancel-hire" autofocus>
+                    Cancel
+                </button>
+
+                <button type="submit" value="confirm" class="confirm-hire">
+                    Confirm Hire
+                </button>
+            </form>
+        </dialog>
+
+        <!-- scripts -->
+        <script src="js/manageApplicants.js"></script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/register.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Job Seeker Registration</title>
+    </head>
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="header-container">
+
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+                
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- navigation -->
+                <nav>
+                    <a href="index.html" class="nav-page">Home</a>
+                    <a href="findJobs.html" class="nav-page">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="howItWorks.html" class="nav-page">How It Works</a>
+                    <a href="about.html" class="nav-page">About</a>
+                    <a href="contact.html" class="nav-page">Contact</a>
+                    <a href="login.html" class="login-button">Login</a>
+                    <a href="register.html" class="register-button">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- job seeker registration -->
+        <main class="registration-page">
+
+            <!-- registration card -->
+            <section class="registration-card">
+                <h1>Create Your Job Seeker Account</h1>
+                <p class="registration-description">Fill in your details to get started.</p>
+
+                <form action="#" method="post" class="registration-form">
+                    <div class="registration-columns">
+
+                        <!-- left column -->
+                        <div class="registration-column">
+                            <label for="fullname">Full Name</label>
+
+                            <div class="registration-input">
+                                <img src="asset/images/icons/user-round-gray.svg" alt="Full Name" class="input-icon">
+
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" maxlength="100" required autofocus>
+                            </div>
+
+                            <!-- email -->
+                            <label for="email">Email Address</label>
+
+                            <div class="registration-input">
+                                <img src="asset/images/icons/mail-gray.svg" alt="Email" class="input-icon">
+
+                                <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+                            </div>
+
+                            <!-- password -->
+                            <label for="password">Password</label>
+
+                            <div class="registration-input">
+                                <img src="asset/images/icons/lock-gray.svg" alt="Password" class="input-icon">
+
+                                <input type="password" id="password" name="password" placeholder="Create a password" minlength="8" maxlength="30" required>
+
+                                <button type="button" class="eye-icon" aria-controls="password" aria-label="Show password" aria-pressed="false">
+                                    <img src="asset/images/icons/eye-gray.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- right column -->
+                        <div class="registration-column">
+
+                            <!-- confirm password -->
+                            <label for="confirmpassword">Confirm Password</label>
+
+                            <div class="registration-input">
+                                <img src="asset/images/icons/lock-gray.svg" alt="Password" class="input-icon">
+
+                                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" minlength="8" maxlength="30" required>
+
+                                <button type="button" class="eye-icon" aria-controls="confirmpassword" aria-label="Show confirmation password" aria-pressed="false">
+                                    <img src="asset/images/icons/eye-gray.svg" alt="">
+                                </button>
+                            </div>
+
+                            <!-- location -->
+                            <label for="location">Location</label>
+
+                            <div class="registration-input">
+                                <img src="asset/images/icons/map-pin-gray.svg" alt="Location" class="input-icon">
+
+                                <input type="text" id="location" name="location" placeholder="City, Province or Country" maxlength="100" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- register button -->
+                    <button type="submit" class="registration-submit">
+                        <img src="asset/images/icons/user-round-white.svg" alt="Register" class="button-icon">
+                        Register
+                    </button>
+                </form>
+
+                <!-- login link -->
+                <p class="registration-login">
+                    Already have an account?
+                    <a href="login.html">Login here</a>
+                </p>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="findJobs.html">Find Talent</a>
+                <a href="postJob.html">Post a Job</a>
+                <a href="howItWorks.html">How It Works</a>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/registration.js"></script>
+        <script src="js/registrationValidation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/companyProfile.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Company Profile</title>
+    </head>
+    <body>
+
+        <!-- dashboard header -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-container">
+
+                <!-- logo -->
+                <a href="employerDashboard.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.PNG" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- employer navigation -->
+                <nav class="dashboard-nav">
+                    <a href="employerDashboard.html">Dashboard</a>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="manageApplicants.html">Applicants</a>
+                    <a href="manageJobs.html">Manage Jobs</a>
+                    <a href="companyProfile.html" class="active">Company</a>
+                    <a href="messages.html?role=employer" class="nav-page">Messages</a>
+                </nav>
+
+                <!-- employer profile -->
+                <div class="employer-profile">
+                    <div class="profile-picture">
+                        <img src="asset/images/company/technova.png">
+                    </div>
+
+                    <div class="profile-name">
+                        <strong>TechNova</strong>
+                        <span>Employer</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main class="company-profile-main">
+
+            <!-- company header -->
+            <section class="company-profile-header">
+                <div class="company-profile-logo">
+                    <img src="asset/images/company/technova.png">
+                </div>
+
+                <div class="company-header-info">
+                    <h1>TechNova Solutions</h1>
+                    <p>Information Technology</p>
+
+                    <div class="company-header-details">
+                        <span>Makati City, Metro Manila</span>
+                        <span>201 - 500 Employees</span>
+                        <span>technova.com</span>
+                    </div>
+                </div>
+
+                <div class="company-header-action">
+                    <button type="button" class="edit-company-button" data-edit="all">
+                        <img src="asset/images/icons/square-pen.png" alt="">
+                        Edit Company Profile
+                    </button>
+                </div>
+            </section>
+
+            <!-- company content -->
+            <section class="company-profile-content">
+
+                <!-- left column -->
+                <div class="company-profile-left">
+                    <section class="company-profile-card">
+
+                        <!-- about company -->
+                        <div class="company-section-heading">
+                            <h2>About the Company</h2>
+                            <button type="button" class="small-edit-button" data-edit="about">Edit</button>
+                        </div>
+
+                        <p class="company-about-text">
+                            TechNova Solutions is a technology company focused on developing modern digital solutions for businesses. We bring together talented professionals who are passionate about innovation, collaboration, and creating meaningful products.
+                        </p>
+                    </section>
+
+                    <!-- company information -->
+                    <section class="company-profile-card">
+                        <div class="company-section-heading">
+                            <h2>Company Information</h2>
+                            <button type="button" class="small-edit-button" data-edit="information">Edit</button>
+                        </div>
+
+                        <div class="company-information-grid">
+                            <div class="company-information-item">
+                                <div class="company-info-icon">
+                                    <img src="asset/images/icons/building-2.svg">
+                                </div>
+
+                                <!-- industry -->
+                                <div>
+                                    <span>Industry</span>
+                                    <strong>Information Technology</strong>
+                                </div>
+                            </div>
+
+                            <div class="company-information-item">
+                                <div class="company-info-icon">
+                                    <img src="asset/images/icons/users-black.png">
+                                </div>
+
+                                <!-- company size -->
+                                <div>
+                                    <span>Company Size</span>
+                                    <strong>201 - 500 Employees</strong>
+                                </div>
+                            </div>
+
+                            <div class="company-information-item">
+                                <div class="company-info-icon">
+                                    <img src="asset/images/icons/map-pin.svg">
+                                </div>
+
+                                <!-- location -->
+                                <div>
+                                    <span>Location</span>
+                                    <strong>Makati City, Metro Manila</strong>
+                                </div>
+                            </div>
+
+                            <!-- website -->
+                            <div class="company-information-item">
+                                <div class="company-info-icon">
+                                    <img src="asset/images/icons/globe.png">
+                                </div>
+
+                                <div>
+                                    <span>Website</span>
+                                    <strong>www.technova.com</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- open jobs -->
+                    <section class="company-profile-card">
+                        <div class="company-section-heading">
+                            <div>
+                                <h2>Open Positions</h2>
+                                <p>Jobs currently available at your company.</p>
+                            </div>
+
+                            <a href="manageJobs.html">View All Jobs</a>
+                        </div>
+
+                        <!-- job 1 -->
+                        <div class="company-job-item">
+                            <div class="company-job-icon">
+                                <img src="asset/images/icons/briefcase.svg">
+                            </div>
+
+                            <div class="company-job-info">
+                                <h3>Senior Software Engineer</h3>
+                                <p>Makati City • Hybrid • Full-Time</p>
+                            </div>
+
+                            <div class="company-job-right">
+                                <span>32 Applicants</span>
+                                <a href="manageApplicants.html">View</a>
+                            </div>
+                        </div>
+
+                        <!-- job 2 -->
+                        <div class="company-job-item">
+                            <div class="company-job-icon">
+                                <img src="asset/images/icons/briefcase.svg">
+                            </div>
+
+                            <div class="company-job-info">
+                                <h3>Product Designer</h3>
+                                <p>Taguig City • Remote • Full-Time</p>
+                            </div>
+
+                            <div class="company-job-right">
+                                <span>18 Applicants</span>
+                                <a href="manageApplicants.html">View</a>
+                            </div>
+                        </div>
+
+                        <!-- job 3 -->
+                        <div class="company-job-item">
+                            <div class="company-job-icon">
+                                <img src="asset/images/icons/briefcase.svg">
+                            </div>
+
+                            <div class="company-job-info">
+                                <h3>Marketing Officer</h3>
+                                <p>Pasig City • On-site • Full-Time</p>
+                            </div>
+
+                            <div class="company-job-right">
+                                <span>25 Applicants</span>
+                                <a href="manageApplicants.html">View</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- right column -->
+                <aside class="company-profile-right">
+
+                    <!-- profile completion -->
+                    <section class="company-side-card">
+                        <h2>Company Profile</h2>
+                        <p>
+                            Complete your company information to help
+                            candidates learn more about your organization.
+                        </p>
+
+                        <div class="company-progress-heading">
+                            <span>Profile Completion</span>
+                            <strong>85%</strong>
+                        </div>
+
+                        <div class="company-progress">
+                            <div class="company-progress-bar"></div>
+                        </div>
+
+                        <button type="button" class="complete-company-button">Complete Profile</button>
+                    </section>
+
+                    <!-- hiring summary -->
+                    <section class="company-side-card">
+                        <h2>Hiring Summary</h2>
+
+                        <div class="hiring-summary-item">
+                            <span>Active Jobs</span>
+                            <strong>8</strong>
+                        </div>
+
+                        <div class="hiring-summary-item">
+                            <span>Total Applicants</span>
+                            <strong>124</strong>
+                        </div>
+
+                        <div class="hiring-summary-item">
+                            <span>Shortlisted</span>
+                            <strong>18</strong>
+                        </div>
+
+                        <div class="hiring-summary-item">
+                            <span>Hired</span>
+                            <strong>6</strong>
+                        </div>
+
+                        <a href="employerDashboard.html" class="dashboard-link-button">View Dashboard</a>
+                    </section>
+
+                    <!-- contact information -->
+                    <section class="company-side-card">
+                        <h2>Contact Information</h2>
+
+                        <div class="company-contact-item">
+                            <div class="company-contact-icon">
+                                <img src="asset/images/icons/mail.svg">
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <p>careers@technova.com</p>
+                            </div>
+                        </div>
+
+                        <div class="company-contact-item">
+                            <div class="company-contact-icon">
+                                <img src="asset/images/icons/phone.svg">
+                            </div>
+
+                            <div>
+                                <span>Phone</span>
+                                <p>+63 912 345 6789</p>
+                            </div>
+                        </div>
+
+                        <div class="company-contact-item">
+                            <div class="company-contact-icon">
+                                <img src="asset/images/icons/map-pin.svg">
+                            </div>
+
+                            <div>
+                                <span>Office</span>
+                                <p>Makati City, Metro Manila</p>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                    <a href="findJobs.html">Find Talent</a>
+                    <a href="postJob.html">Post a Job</a>
+                    <a href="howItWorks.html">How It Works</a>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <dialog id="company-edit-dialog" aria-labelledby="company-edit-title">
+            <h2 id="company-edit-title">Edit Company Profile</h2>
+            <p>Keep your company details up to date.</p>
+
+            <form id="company-edit-form">
+                <fieldset id="company-name-fields">
+                    <label for="company-edit-name">Company Name</label>
+                    <input id="company-edit-name" name="companyname" type="text" maxlength="150" required>
+                </fieldset>
+
+                <fieldset id="company-information-fields">
+                    <label for="company-edit-industry">Industry</label>
+                    <input id="company-edit-industry" name="industry" type="text" maxlength="100" required>
+
+                    <label for="company-edit-size">Company Size</label>
+                    <input id="company-edit-size" name="size" type="text" maxlength="60" required>
+
+                    <label for="company-edit-location">Location</label>
+                    <input id="company-edit-location" name="location" type="text" maxlength="150" required>
+
+                    <label for="company-edit-website">Website (Optional)</label>
+                    <input id="company-edit-website" name="website" type="url" placeholder="https://example.com">
+                </fieldset>
+
+                <fieldset id="company-about-fields">
+                    <label for="company-edit-about">About the Company</label>
+                    <textarea id="company-edit-about" name="about" rows="5" maxlength="2000" required></textarea>
+                </fieldset>
+
+                <div class="company-edit-actions">
+                    <button type="button" id="cancel-company-edit">
+                        Cancel
+                    </button>
+
+                    <button type="submit" class="save-company-edit">
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- scripts -->
+        <script src="js/companyProfile.js"></script>
+    </body>
+</html>

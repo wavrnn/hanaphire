@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/pages/candidateProfile.css">
+        <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+        <title>HanapHire | Candidate Profile</title>
+    </head>
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="header-container">
+
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </a>
+                
+                <!-- hamburger menu -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <img src="asset/images/icons/menu.svg" alt="Menu">
+                </label>
+
+                <!-- navigation -->
+                <nav>
+                    <a href="index.html" class="nav-page">Home</a>
+                    <a href="findJobs.html" class="nav-page active">Find Talent</a>
+                    <a href="postJob.html" class="nav-page">Post a Job</a>
+                    <a href="howItWorks.html" class="nav-page">How It Works</a>
+                    <a href="about.html" class="nav-page">About</a>
+                    <a href="contact.html" class="nav-page">Contact</a>
+                    <a href="login.html" class="login-button">Login</a>
+                    <a href="register.html" class="register-button">Register</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- candidate profile -->
+        <main class="profile-container">
+
+            <!-- back link -->
+            <a href="findJobs.html" class="back-link">
+                <img src="asset/images/icons/chevron-left.svg" alt="Back" class="small-icon">
+                Back to Candidates
+            </a>
+
+            <!-- profile header -->
+            <section class="profile-header">
+                <div class="profile-main">
+
+                    <!-- candidate picture -->
+                    <div class="profile-picture">
+                        <img src="asset/images/candidates/ryzza.png">
+                    </div>
+
+                    <!-- candidate details -->
+                    <div class="profile-details">
+                        <h1>Ryzza Mae Dizon</h1>
+                        <h3>Software Engineer</h3>
+                        <p>
+                            <img src="asset/images/icons/map-pin.svg" alt="Location" class="small-icon">
+                            Santa Maria, Bulacan, Philippines
+                        </p>
+
+                        <p>
+                            <img src="asset/images/icons/briefcase.svg" alt="Experience" class="small-icon">
+                            10+ years of experience
+                        </p>
+
+                        <p>
+                            <img src="asset/images/icons/circle-dollar-sign.svg" alt="Salary" class="small-icon">
+                            ₱120,000 - ₱150,000
+                        </p>
+
+                        <span class="available">Available</span>
+                    </div>
+                </div>
+
+                <!-- profile buttons -->
+                <div class="profile-actions">
+                    <a href="#" class="contact-button">
+                        <img src="asset/images/icons/email.png" alt="Contact" class="button-icon">
+                        Contact
+                    </a>
+
+                    <a href="#" class="invite-button">
+                        <img src="asset/images/icons/send.svg" alt="Invite" class="button-icon">
+                        Invite to Apply
+                    </a>
+
+                    <button type="button" id="print-profile" class="invite-button"> Print Profile</button>
+            </section>
+
+            <!-- candidate overview -->
+            <section class="overview-container">
+
+                <!-- employment type -->
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <img src="asset/images/icons/briefcase.svg" alt="Employement Type">
+                    </div>
+                    <div>
+                        <span>Employement Type</span>
+                        <strong>Full Time</strong>
+                    </div>
+                </div>
+
+                <!-- availability -->
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <img src="asset/images/icons/clock.svg" alt="Availability">
+                    </div>
+                    <div>
+                        <span>Availability</span>
+                        <strong>Immediately</strong>
+                    </div>
+                </div>
+
+                <!-- work setup -->
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <img src="asset/images/icons/building-2.svg" alt="Work Setup">
+                    </div>
+                    <div>
+                        <span>Work Setup</span>
+                        <strong>Remote / Hybrid</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about -->
+            <section class="profile-section">
+                <h2>About</h2>
+                <p>Detailed-oriented Software Engineer with over 5 years of experience building scalable web applications and APIs. Passionate about clean code, problem-solving, and delivering high-quality solutions that drive business impact.</p>
+            </section>
+
+            <!-- skills -->
+            <section class="profile-section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>Git</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                    <span>RESTful API</span>
+                    <span>Agile</span>
+                </div>
+            </section>
+
+            <!-- experience -->
+            <section class="profile-section">
+                <h2>Experience</h2>
+
+                <!-- experience 1 -->
+                <div class="experience-item">
+                    <div class="experience-mark"></div>
+                    <div class="experience-details">
+                        <div class="experience-title">
+                            <div>
+                                <h3>Senior Software Engineer</h3>
+                                <p>TechNova Solutions</p>
+                                <span>Jan 2022 - Present</span>
+                            </div>
+                            <strong>2 yrs 4 mos</strong>
+                        </div>
+
+                        <ul>
+                            <li>Led a team of developers in building and maintaining SaaS applications.</li>
+                            <li>Improved system performance through optimization and refactoring.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- experience 2 -->
+                <div class="experience-item">
+                    <div class="experience-mark"></div>
+                    <div class="experience-details">
+                        <div class="experience-title">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p>DevCore Inc.</p>
+                                <span>Jun 2020 - Dec 2021</span>
+                            </div>
+                            <strong>1 yr 6 mos</strong>
+                        </div>
+
+                        <ul>
+                            <li>Developed RESTful APIs and integrated third-party services.</li>
+                            <li>Collaborated with UI/UX designers to implement responsive interfaces.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- experience 3 -->
+                <div class="experience-item">
+                    <div class="experience-mark"></div>
+                    <div class="experience-details">
+                        <div class="experience-title">
+                            <div>
+                                <h3>Junior Developer</h3>
+                                <p>WebWorks PH</p>
+                                <span>Jan 2019 - May 2020</span>
+                            </div>
+                            <strong>1 yr 5 mos</strong>
+                        </div>
+
+                        <ul>
+                            <li>Assisted in building web applications and fixing bugs.</li>
+                            <li>Wrote clean and maintanable code and participated in code reviews.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- education -->
+            <section class="profile-section education-section">
+                <h2>
+                    <img src="asset/images/icons/graduation-cap.svg" alt="Education" class="section-icon">
+                    Education
+                </h2>
+
+                <div class="education-details">
+                    <h3>Bachelor's of Science in Information Technology</h3>
+                    <p>Nueva Ecija University of Science and Technology</p>
+                    <span>2014 - 2018</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+                    <span>HanapHire</span>
+                </div>
+
+                <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+                </div>
+
+                <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="findJobs.html">Find Talent</a>
+                <a href="postJob.html">Post a Job</a>
+                <a href="howItWorks.html">How It Works</a>
+                <a href="#">Browse Jobs</a>
+                <a href="#">Browse Companies</a>
+                </div>
+
+                <div class="footer-links">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Help Center</a>
+                </div>
+
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                    <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+                    hanaphire@gmail.com
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+                    +63 912 345 6789
+                </p>
+
+                <p>
+                    <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+                    CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+                </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 HanapHire. All rights reserved.</p>
+
+                <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/candidateProfile.js"></script>
+    </body>
+</html>

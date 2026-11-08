@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/home.css">
+    <link rel="icon" href="asset/images/logo/hanaphire-favicon.ico">
+    <title>HanapHire | Home</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <div class="header-container">
+
+        <!-- logo -->
+        <a href="index.html" class="logo">
+          <img src="asset/images/logo/hanaphirelogo.png" alt="HanapHire Logo">
+          <span>HanapHire</span>
+        </a>
+
+        <!-- hamburger menu -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <img src="asset/images/icons/menu.svg">
+        </label>
+
+        <!-- navigation -->
+        <nav>
+          <a href="index.html" class=" nav-page active">Home</a>
+          <a href="findJobs.html" class="nav-page">Find Talent</a>
+          <a href="postJob.html" class="nav-page">Post a Job</a>
+          <a href="howItWorks.html" class="nav-page">How It Works</a>
+          <a href="about.html" class="nav-page">About</a>
+          <a href="contact.html" class="nav-page">Contact</a>
+          <a href="login.html" class="login-button">Login</a>
+          <a href="register.html" class="register-button">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-label">Connecting Talent. Building Futures.</p>
+          <h1>Find the Right Talent. <span>Build Your Future.</span></h1>
+          <p class="hero-description">HanapHire connects employers with qualified professionals and helps job seeker discover opportunities that match their skill and career goals.</p>
+          <div class="hero-button">
+            <a href="findJobs.html" class="primary-buttons">
+              <img src="asset/images/icons/search.svg" alt="Search" class="button-icon">
+              Find Talent
+            </a>
+            <a href="postJob.html" class="secondary-buttons">
+              <img src="asset/images/icons/briefcase-blue.svg" alt="Post a Job" class="button-icon">
+              Post a Job
+            </a>
+          </div>
+        </div> 
+
+        <div class="hero-image">
+          <img src="asset/images/home/hero.png" alt="HanapHire Recruitment">
+        </div>
+      </div>
+    </section>
+
+    <!-- featured job seekers -->
+    <section class="home-featured" aria-labelledby="featured-seekers-title">
+        <div class="home-featured-heading">
+            <div>
+                <span class="home-featured-label">People with potential</span>
+                <h2 id="featured-seekers-title">Featured Job Seekers</h2>
+                <p>Meet professionals ready for their next opportunity.</p>
+            </div>
+
+            <a href="findJobs.html">Browse Candidates →</a>
+        </div>
+
+        <div class="home-featured-grid">
+            <article class="home-profile-card"
+                    data-profile="candidateProfile.html">
+
+                <img class="home-profile-image" src="asset/images/candidates/ryzza.png" alt="Ryzza Mae Dizon">
+
+                <h3>Ryzza Mae Dizon</h3>
+                <p class="home-profile-role">Software Engineer</p>
+                <p class="home-profile-location">Santa Maria, Bulacan</p>
+
+                <div class="home-profile-tags">
+                    <span>Figma</span>
+                    <span>UI Design</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Profile
+                </button>
+            </article>
+
+            <article class="home-profile-card">
+                <img class="home-profile-image" src="asset/images/candidates/candidate.png" alt="">
+
+                <h3>John Reyes</h3>
+                <p class="home-profile-role">Web Developer</p>
+                <p class="home-profile-location">Quezon City</p>
+
+                <div class="home-profile-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Profile
+                </button>
+            </article>
+
+            <article class="home-profile-card">
+                <img class="home-profile-image" src="asset/images/candidates/candidate.png" alt="">
+
+                <h3>Angela Cruz</h3>
+                <p class="home-profile-role">Marketing Specialist</p>
+                <p class="home-profile-location">Pasig City</p>
+
+                <div class="home-profile-tags">
+                    <span>SEO</span>
+                    <span>Marketing</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Profile
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- featured employers -->
+    <section class="home-featured home-employers"
+            aria-labelledby="featured-employers-title">
+
+        <div class="home-featured-heading">
+            <div>
+                <span class="home-featured-label">Discover your next workplace</span>
+                <h2 id="featured-employers-title">Featured Employers</h2>
+                <p>Explore companies and the opportunities they offer.</p>
+            </div>
+        </div>
+
+        <div class="home-featured-grid">
+            <article class="home-profile-card home-employer-card" data-profile="companyProfile.html">
+
+                <img class="home-profile-image" src="asset/images/company/technova.png" alt="TechNova Solutions logo">
+
+                <h3>TechNova Solutions</h3>
+                <p class="home-profile-role">Information Technology</p>
+                <p class="home-profile-location">Makati City</p>
+
+                <div class="home-profile-tags">
+                    <span>Software Engineering</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Company
+                </button>
+            </article>
+
+            <article class="home-profile-card home-employer-card">
+                <img class="home-profile-image" src="asset/images/company/digitalworks.png" alt="DigitalWorks PH logo">
+
+                <h3>DigitalWorks PH</h3>
+                <p class="home-profile-role">Information Technology</p>
+                <p class="home-profile-location">Taguig City</p>
+
+                <div class="home-profile-tags">
+                    <span>Front-End Development</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Company
+                </button>
+            </article>
+
+            <article class="home-profile-card home-employer-card">
+                <img class="home-profile-image" src="asset/images/company/cloudcore.png" alt="CloudCore Technologies logo">
+
+                <h3>CloudCore Technologies</h3>
+                <p class="home-profile-role">Information Technology</p>
+                <p class="home-profile-location">Pasig City</p>
+
+                <div class="home-profile-tags">
+                    <span>Full Stack Development</span>
+                </div>
+
+                <button type="button" class="home-profile-button">
+                    View Company
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- how it works -->
+    <section class="how-it-works">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Simple steps to help you hire the best or find the right opportunity.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-card">
+
+          <!-- step 1 -->
+          <span class="step-number">1</span>
+          <div class="step-icon">
+            <img src="asset/images/icons/briefcase.svg" alt="Post Job">
+          </div>
+          <h3>Post a Job</h3>
+          <p>Create a detailed job posting and reach the right candidates.</p>
+        </div>
+        
+        <!-- step 2 -->
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <div class="step-icon">
+            <img src="asset/images/icons/search-black.svg" alt="Find Candidates">
+          </div>
+          <h3>Find Candidates</h3>
+          <p>Search for qualified professionals who match your requirements.</p>
+        </div>
+
+        <!-- step 3 -->
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <div class="step-icon">
+            <img src="asset/images/icons/clipboard-check.svg" alt="Review Applicants">
+          </div>
+          <h3>Review Applicants</h3>
+          <p>Review applicant profile, information, skills, and qualifications.</p>
+        </div>
+
+        <!-- step 4 -->
+        <div class="step-card">
+          <span class="step-number">4</span>
+          <div class="step-icon">
+            <img src="asset/images/icons/user-round-check.svg" alt="Hire Employee">
+          </div>
+          <h3>Hire Employee</h3>
+          <p>Choose the right candidate and start building your team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose hanaphire -->
+    <section class="why-choose">
+      <div class="section-title">
+        <h2>Why Choose HanapHire?</h2>
+        <p>We make hiring and job searching easier, faster, and more effective.</p>
+      </div>
+
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="asset/images/icons/users.svg" alt="Quality Candidates">
+          </div>
+
+          <!-- quality candidates -->
+          <div class="feature-content">
+            <h3>Quality Candidates</h3>
+            <p>Discover qualified professionals from different industries and skill levels.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="asset/images/icons/check.svg" alt="Easy Hiring">
+          </div>
+
+          <!-- easy hiring -->
+          <div class="feature-content">
+            <h3>Easy Hiring</h3>
+            <p>Simple recruitment tools help employers manage applicants and save time.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="asset/images/icons/shield.svg" alt="Trusted Platforms">
+          </div>
+
+          <!-- trusted platform -->
+          <div class="feature-content">
+            <h3>Trusted Platform</h3>
+            <p>Build professional connections between employers and job seekers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action -->
+    <section class="cta">
+      <h2>Ready to get started?</h2>
+      <p>Join HanapHire and start building better career connections today.</p>
+      <div class="cta-buttons">
+        <a href="registerJobSeeker.html" class="jobseeker-button">
+          <img src="asset/images/icons/user-blue.png" class="button-icon">I'm a Jobseeker
+        </a>
+        <a href="registerEmployer.html" class="employer-button">
+          <img src="asset/images/icons/building-2-white.svg" class="button-icon">I'm an Employer
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <img src="asset/images/logo/hanaphirelogo-white.png" alt="HanapHire Logo">
+            <span>HanapHire</span>
+          </div>
+
+          <p>Connecting talent with opportunity and helping businesses build stronger teams for the future.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="findJobs.html">Find Talent</a>
+          <a href="postJob.html">Post a Job</a>
+          <a href="howItWorks.html">How It Works</a>
+          <a href="#">Browse Jobs</a>
+          <a href="#">Browse Companies</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Company</h3>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Help Center</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>
+            <img src="asset/images/icons/mail.svg" alt="Email" class="contact-icon">
+            hanaphire@gmail.com
+          </p>
+
+          <p>
+            <img src="asset/images/icons/phone.svg" alt="Phone" class="contact-icon">
+            +63 912 345 6789
+          </p>
+
+          <p>
+            <img src="asset/images/icons/map-pin.svg" alt="Location" class="contact-icon">
+            CICT Bldg, NEUST Sumacab Campus, Cabanatuan City, Nueva Ecija, 3100
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 HanapHire. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+    </footer>
+
+    <dialog id="home-profile-dialog" aria-labelledby="home-preview-name">
+        <img id="home-preview-image" src="asset/images/candidates/candidate.png" alt="">
+
+        <p id="home-preview-label">Profile overview</p>
+        <h2 id="home-preview-name"></h2>
+        <p id="home-preview-role"></p>
+        <p id="home-preview-location"></p>
+        <div id="home-preview-tags" class="home-profile-tags"></div>
+
+        <a id="home-full-profile" href="#" hidden>
+            Open Full Profile
+        </a>
+
+        <form method="dialog">
+            <button type="submit" class="home-profile-button" autofocus>
+                Close
+            </button>
+        </form>
+    </dialog>
+
+    <!-- scripts -->
+    <script src="js/home.js"></script>
+  </body>
+</html>
