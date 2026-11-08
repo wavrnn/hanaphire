@@ -1,0 +1,440 @@
+body {
+    background-color: white;
+}
+
+ /* about hero */
+.about-hero {
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.about-container {
+    width: 100%;
+    min-height: 380px;
+    margin: auto;
+    padding-left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    width: 36%;
+    position: relative;
+    z-index: 2;
+}
+
+.about-image {
+    width: 58%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.about-image img {
+    width: 90%;
+    height: 90%;
+    display: block;
+    object-fit: cover;
+    object-position: center right;
+}
+
+/* about label */
+
+.about-label {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* about heading */
+
+.about-content h1 {
+    color: black;
+    font-size: 38px;
+    margin: 18px 0 12px 0;
+}
+
+.about-description {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 500px;
+}
+
+/* mission and vision */
+
+.mission-vision {
+    width: 90%;
+    margin: 0 auto 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.mission-card, .vision-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 35px;
+}
+
+.mission-card:hover, .vision-card:hover {
+    box-shadow: 0 5px 15px #e2e8f0;
+}
+
+/* mission / vision icon */
+
+.about-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-icon img {
+    width: 38px;
+    height: 38px;
+}
+
+.mission-card h2, .vision-card h2 {
+    color: black;
+    font-size: 18px;
+    margin: 17px 0 10px 0;
+}
+
+.mission-card p, .vision-card p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* small blue line */
+
+.small-line {
+    width: 30px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 17px auto 0 auto;
+    border-radius: 5px;
+}
+
+/* statistics */
+
+.statistics {
+    width: 90%;
+    margin: 0 auto 25px auto;
+    padding: 22px 30px;
+    background-color: #eff6ff;
+    border-radius: 10px;
+}
+
+.statistics > h2 {
+    color: #2563eb;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.statistics-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* statistic icon */
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+/* statistic text */
+
+.stat-text h3 {
+    color: black;
+    font-size: 18px;
+    margin: 0 0 2px 0;
+}
+
+.stat-text p {
+    color: #64748b;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* about cta */
+
+.about-cta {
+    width: 90%;
+    min-height: 180px;
+    margin: 0 auto 55px auto;
+    background-color: #2563eb;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.cta-content {
+    width: 60%;
+    padding: 35px 20px 25px 40px;
+}
+.cta-content h2 {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+}
+
+.cta-content p {
+    color: #dbeafe;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+/* cta buttons */
+
+.about-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.about-post-button, .about-find-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.about-post-button {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid white;
+}
+
+.about-post-button:hover {
+    background-color: #eff6ff;
+}
+
+.about-find-button {
+    background-color: #2563eb;
+    color: white;
+    border: 1px solid white;
+}
+
+.about-find-button:hover {
+    background-color: white;
+    color: #2563eb;
+}
+
+/* cta image */
+
+.cta-image {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cta-image img {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media(max-width: 1200px) and (min-width: 901px) {
+    .about-container {
+        min-height: 340px;
+        padding-left: 6%;
+    }
+
+    .about-content {
+        width: 42%;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .about-image {
+        width: 58%;
+        height: 340px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center right;
+    }
+
+    .about-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0.92) 35%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+    }
+    .about-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .about-post-button, .about-find-button {
+        width: auto;
+        margin: 0;
+    }
+
+    .about-post-button {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 900px) {
+    .about-container {
+        min-height: auto;
+        display: block;
+        padding: 50px 25px;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    /* mission and vision */
+
+    .mission-vision {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* statistics */
+
+    .statistics-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-item {
+        padding: 12px;
+    }
+
+    /* cta */
+
+    .cta-content {
+        width: 100%;
+        padding: 35px;
+        text-align: center;
+    }
+
+    .about-buttons {
+        justify-content: center;
+    }
+
+    .cta-image {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .about-container {
+        padding: 40px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-description {
+        font-size: 14px;
+    }
+
+    /* mission and vision */
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    /* statistics */
+
+    .statistics-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        justify-content: flex-start;
+        width: 190px;
+        margin: auto;
+    }
+
+    /* cta */
+
+    .about-cta {
+        min-height: auto;
+    }
+
+    .cta-content {
+        padding: 30px 20px;
+    }
+
+    .about-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-post-button, .about-find-button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-post-button {
+        margin-bottom: 10px;
+    }
+}

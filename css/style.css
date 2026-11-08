@@ -1,0 +1,398 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header-container {
+    width: 95%;
+    min-height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+    font: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+nav a {
+    color: black;
+    font-size: 14p;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+nav .active {
+    color: #2563eb;
+}
+
+.nav-page {
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-page.active {
+    color: #2563EB;
+    border-bottom: 2px solid #2563EB;
+}
+
+.nav-page:hover {
+    color: #2563EB;
+    border-bottom-color: #DBEAFE;
+}
+
+.nav-page.active:hover {
+    border-bottom-color: #2563EB;
+}
+
+.login-button {
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.login-button:hover {
+    background-color: #eff6ff;
+}
+
+.register-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 6px;
+}
+
+.register-button:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.primary-buttons, .secondary-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-buttons {
+    background-color: #2563eb;
+    color: white;
+    padding: 13px 23px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+}
+
+.primary-buttons:hover {
+    background-color: #1e3a8a;
+}
+
+.secondary-buttons {
+    background-color: white;
+    color: #2563eb;
+    padding: 13px 23px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+}
+
+.secondary-buttons:hover {
+    background-color: #eff6ff;
+}
+
+.button-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h2 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+    margin-top: 0;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], input[type="number"], input[type="url"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #eff6ff;
+    color: black;
+    padding: 15px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.footer-container {
+    width: 95%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.footer-about p {
+    color: #dbeafe;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h3, .footer-contact h3 {
+    color: white;
+}
+
+.footer-links a {
+    color: #dbeafe;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-contact p {
+    color: #dbeafe;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.footer-bottom {
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    border-top: 1px solid #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    color: #dbeafe;
+    margin: 0;
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    color: #dbeafe;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+@media(max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-top: 1px solid #e2e8f0;
+        box-shadow: 0 5px 10px #e2e8f0;
+        z-index: 10;
+    }
+
+    nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    nav a:hover {
+        background-color: #eff6ff;
+    }
+
+    .nav-page.active {
+        color: #2563EB;
+        border-bottom: 1px solid #E2E8F0;
+        text-decoration: none;
+        background-color: #EFF6FF;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    .login-button, .register-button {
+        border-radius: 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px) {
+    .header-container {
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    nav {
+        top: 70px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom a {
+        display: block;
+        margin: 5px 0;
+    }
+}

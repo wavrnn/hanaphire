@@ -1,0 +1,557 @@
+body {
+    background-color: #EFF6FF;
+}
+
+.register-section {
+    min-height: 580px;
+    padding: 50px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.register-card {
+    width: 580px;
+    background-color: white;
+    padding: 35px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #D8E3F3;
+    text-align: center;
+}
+
+.register-card h1 {
+    color: #0F172A;
+    font-size: 26px;
+    margin: 0 0 8px 0;
+}
+
+.register-description {
+    color: #64748B;
+    font-size: 13px;
+    margin: 0 0 25px 0;
+}
+
+.account-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.account-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.account-card {
+    position: relative;
+    padding: 25px 20px;
+    background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account-card:hover {
+    border-color: #2563EB;
+    background-color: #F8FAFF;
+}
+
+.account-card input[type="radio"] {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.account-card:has(input[type="radio"]:checked) {
+    border: 2px solid #2563EB;
+    background-color: #EFF6FF;
+}
+
+.account-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px auto;
+    background-color: #2563EB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.account-card h2 {
+    color: #0F172A;
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+
+.account-card p {
+    color: #64748B;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.continue-button {
+    width: 55%;
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #1E3A8A;
+}
+
+.login-text {
+    color: #64748B;
+    font-size: 12px;
+    margin: 18px 0 0 0;
+}
+
+.login-text a {
+    color: #2563EB;
+    margin-left: 4px;
+}
+
+.login-text a:hover {
+    color: #1E3A8A;
+}
+
+.registration-page {
+    min-height: 600px;
+    background-color: #EFF6FF;
+    padding: 55px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-card {
+    width: 700px;
+    background-color: white;
+    padding: 32px 35px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #D8E3F3;
+    text-align: center;
+}
+
+.registration-card h1 {
+    color: #0F172A;
+    font-size: 25px;
+    margin: 0 0 7px 0;
+}
+
+.registration-description {
+    color: #64748B;
+    font-size: 13px;
+    margin: 0 0 25px 0;
+}
+
+.registration-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.registration-form input[aria-invalid="true"], .employer-registration-form input[aria-invalid="true"], .employer-registration-form select[aria-invalid="true"] {
+    border-color: #b91c1c;
+}
+
+.registration-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.registration-column label {
+    color: #0F172A;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.registration-input {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.registration-input input {
+    width: 100%;
+    padding: 11px 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.registration-input input:focus {
+    border-color: #2563EB;
+    outline: none;
+}
+
+.registration-input .input-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 13px;
+    top: 11px;
+}
+
+.registration-input .eye-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+}
+
+button.eye-icon {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button.eye-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button.eye-icon:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+}
+
+.registration-submit {
+    width: 55%;
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration-submit:hover {
+    background-color: #1E3A8A;
+}
+
+.registration-login {
+    color: #64748B;
+    font-size: 12px;
+    margin: 18px 0 0 0;
+}
+
+.registration-login a {
+    color: #2563EB;
+    margin-left: 4px;
+}
+
+.registration-login a:hover {
+    color: #1E3A8A;
+}
+
+.employer-registration-page {
+    min-height: 650px;
+    background-color: #EFF6FF;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.employer-registration-card {
+    width: 760px;
+    background-color: white;
+    padding: 30px 35px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #D8E3F3;
+    text-align: center;
+}
+
+.employer-registration-card h1 {
+    color: #0F172A;
+    font-size: 25px;
+    margin: 0 0 7px 0;
+}
+
+.employer-registration-description {
+    color: #64748B;
+    font-size: 13px;
+    margin: 0 0 25px 0;
+}
+
+.employer-registration-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.employer-registration-form h2 {
+    color: #0F172A;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.company-heading {
+    margin-top: 20px !important;
+}
+
+.employer-form-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+
+.employer-field {
+    margin-bottom: 16px;
+}
+
+.employer-field label {
+    color: #0F172A;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.employer-field label span {
+    color: #64748B;
+    font-weight: normal;
+}
+
+.employer-input {
+    position: relative;
+}
+
+.employer-input input {
+    width: 100%;
+    padding: 11px 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.employer-input input:focus {
+    border-color: #2563EB;
+    outline: none;
+}
+
+.employer-field select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.employer-field select:focus {
+    border-color: #2563EB;
+    outline: none;
+}
+
+.employer-input .input-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 13px;
+    top: 11px;
+}
+
+.employer-input .eye-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+}
+
+.full-field {
+    width: 100%;
+}
+
+.employer-register-button {
+    width: 45%;
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.employer-register-button:hover {
+    background-color: #1E3A8A;
+}
+
+.employer-login-text {
+    color: #64748B;
+    font-size: 12px;
+    margin: 18px 0 0 0;
+}
+
+.employer-login-text a {
+    color: #2563EB;
+    margin-left: 4px;
+}
+
+.employer-login-text a:hover {
+    color: #1E3A8A;
+}
+
+.field-error {
+    color: #b91c1c;
+    font-size: 12px;
+    margin: 4px 0 12px;
+}
+
+.registration-submit, .employer-register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.registration-submit .button-icon, .employer-register-button .button-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+@media(max-width: 900px) {
+    .register-section {
+        min-height: 550px;
+    }
+
+    .registration-page {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .registration-card {
+        width: 700px;
+        max-width: 100%;
+    }
+
+    .employer-registration-page {
+        min-height: auto;
+        padding: 50px 20px;
+    }
+
+    .employer-registration-card {
+        width: 760px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    .register-section {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .register-card {
+        width: 100%;
+        padding: 28px 20px;
+    }
+
+    .register-card h1 {
+        font-size: 23px;
+    }
+
+    .account-options {
+        grid-template-columns: 1fr;
+    }
+
+    .account-card {
+        padding: 22px 20px;
+    }
+
+    .continue-button {
+        width: 100%;
+    }
+
+    .registration-page {
+        padding: 40px 18px;
+    }
+
+    .registration-card {
+        padding: 28px 20px;
+    }
+
+    .registration-card h1 {
+        font-size: 22px;
+    }
+
+    .registration-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .registration-submit {
+        width: 100%;
+    }
+
+    .employer-registration-page {
+        padding: 40px 18px;
+    }
+
+    .employer-registration-card {
+        padding: 28px 20px;
+    }
+
+    .employer-registration-card h1 {
+        font-size: 22px;
+    }
+
+    .employer-form-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .employer-register-button {
+        width: 100%;
+    }
+}

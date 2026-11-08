@@ -1,0 +1,266 @@
+body {
+    background-color: #EFF6FF;
+}
+
+.login-section {
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card {
+    width: 390px;
+    background-color: white;
+    padding: 30px 35px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #D8E3F3;
+    text-align: center;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.login-logo img {
+    width: 42px;
+    height: 42px;
+    margin-right: 7px;
+}
+
+.login-logo span {
+    color: #0F172A;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.login-card h1 {
+    color: #0F172A;
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.login-description {
+    color: #64748B;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.login-form label {
+    color: #0F172A;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 11px 40px;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.input-container input:focus {
+    border-color: #2563EB;
+    outline: none;
+}
+
+.input-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 13px;
+    top: 11px;
+}
+
+.eye-icon {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+}
+
+button.eye-icon {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button.eye-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button.eye-icon:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+}
+
+.password-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password-heading label {
+    margin-bottom: 6px;
+}
+
+.password-heading a {
+    color: #2563EB;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.password-heading a:hover {
+    color: #1E3A8A;
+}
+
+.login-submit {
+    width: 100%;
+    background-color: #2563EB;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.login-submit:hover {
+    background-color: #1E3A8A;
+}
+
+.register-text {
+    color: #64748B;
+    font-size: 12px;
+    margin: 20px 0 0 0;
+}
+
+.register-text a {
+    color: #2563EB;
+    margin-left: 5px;
+}
+
+.register-text a:hover {
+    color: #1E3A8A;
+}
+
+/* demo access */
+
+.demo-access {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.demo-access > p {
+    color: #64748B;
+    font-size: 11px;
+    margin: 0 0 10px 0;
+}
+
+.demo-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.employer-demo-button, .jobseeker-demo-button {
+    padding: 9px;
+    border: 1px solid #2563EB;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.employer-demo-button {
+    background-color: #2563EB;
+    color: white;
+}
+
+.employer-demo-button:hover {
+    background-color: #1E3A8A;
+}
+
+.jobseeker-demo-button {
+    background-color: white;
+    color: #2563EB;
+}
+
+.jobseeker-demo-button:hover {
+    background-color: #EFF6FF;
+}
+
+.login-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.login-submit .button-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+
+@media(max-width: 600px) {
+
+    .demo-buttons {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width: 900px) {
+    .login-section {
+        min-height: 550px;
+        padding: 50px 20px;
+    }
+}
+
+@media(max-width: 600px) {
+    .login-section {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 390px;
+        padding: 28px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 22px;
+    }
+}

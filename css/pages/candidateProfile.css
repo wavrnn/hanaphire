@@ -1,0 +1,406 @@
+body {
+    background-color: #f8fafc;
+}
+
+/* profile container */
+
+.profile-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto 50px auto;
+}
+
+/* back link */
+
+.back-link {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    color: #1e3a8a;
+}
+
+.small-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* profile header */
+
+.profile-header {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+}
+
+.profile-main {
+    width: 70%;
+    display: flex;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.profile-picture img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.profile-details h1 {
+    color: #0f172a;
+    font-size: 30px;
+    margin: 5px 0 5px 0;
+}
+
+.profile-details h3 {
+    color: #0f172a;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+.profile-details p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.available {
+    display: inline-block;
+    color: #16a34a;
+    background-color: #dcfce7;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* profile buttons */
+
+.profile-actions {
+    width: 30%;
+    text-align: right;
+}
+
+.contact-button, .invite-button {
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    padding: 11px 15px;
+    border-radius: 6px;
+}
+
+.contact-button {
+    background-color: #2563eb;
+    color: white;
+    border: 1px solid #2563eb;
+    margin-bottom: 10px;
+}
+
+.contact-button img {
+    filter: brightness(0) invert(1);
+}
+
+.contact-button:hover {
+    background-color: #1e3a8a;
+}
+
+.invite-button {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.invite-button:hover {
+    background-color: #eff6ff;
+}
+
+/* overview */
+
+.overview-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.overview-card {
+    width: 33%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 17px;
+    margin-right: 15px;
+    display: flex;
+}
+
+.overview-card:last-child {
+    margin-right: 0;
+}
+
+.overview-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #eff6ff;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+.overview-icon img {
+    width: 22px;
+    height: 22px;
+    margin: 9px;
+}
+
+.overview-card span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.overview-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+/* profile sections */
+
+.profile-section {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+.profile-section h2 {
+    color: #0f172a;
+    font-size: 19px;
+    margin: 0 0 15px 0;
+}
+
+.profile-section > p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* skills */
+
+.skills-container span {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 7px 12px;
+    border-radius: 15px;
+    margin: 4px;
+    font-size: 12px;
+}
+
+/* experience */
+
+.experience-item {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-mark {
+    width: 10px;
+    height: 10px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 15px;
+}
+
+.experience-details {
+    width: 95%;
+}
+
+.experience-title {
+    display: flex;
+}
+
+.experience-title > div {
+    width: 80%;
+}
+
+.experience-title > strong {
+    width: 20%;
+    color: #64748b;
+    font-size: 13px;
+    text-align: right;
+}
+
+.experience-title h3 {
+    color: #0f172a;
+    font-size: 13px;
+    margin: 0 0 4px 0;
+}
+
+.experience-title p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 0 0 3px 0;
+}
+
+.experience-title span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.experience-details ul {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.experience-details li {
+    margin-bottom: 5px;
+}
+
+/* education */
+
+.education-details h2 {
+    display: flex;
+}
+
+.section-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.education-details {
+    margin-left: 30px;
+}
+
+.education-details h3 {
+    color: #0f172a;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.education-details p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 0 0 5px 0;
+}
+
+.education-details span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* tablet */
+
+@media(max-width: 900px) {
+    .profile-header {
+        display: block;
+    }
+
+    .profile-main {
+        width: 100%;
+    }
+
+    .profile-actions {
+        width: 100%;
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .overview-container {
+        display: block;
+    }
+
+    .overview-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* mobile */
+
+@media(max-width: 700px) {
+    .profile-container {
+        width: 92%;
+    }
+
+    .profile-main {
+        display: block;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin: 0 auto 20px auto;
+    }
+
+    .profile-details h1 {
+        font-size: 26px;
+    }
+
+    .profile-actions {
+        text-align: center;
+    }
+
+    .contact-button, .invite-button {
+        width: 100%;
+    }
+
+    .experience-title {
+        display: block;
+    }
+
+    .experience-title > div {
+        width: 100%;
+    }
+
+    .experience-title > strong {
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+    }
+}
+
+#print-profile {
+    font: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* ayos ng profile kapag nagpi-print */
+@media print {
+    header, footer, .back-link, .profile-actions {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .profile-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+}

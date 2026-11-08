@@ -1,0 +1,295 @@
+body {
+    background-color: white;
+}
+
+.how-heading {
+    width: 90%;
+    margin: auto;
+    padding: 55px 0 30px 0;
+    display: flex;
+}
+
+.how-heading-content {
+    width: 55%;
+    padding-top: 30px;
+}
+
+.how-label {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.how-heading-content h1 {
+    color: black;
+    font-size: 42px;
+    margin: 18px 0 12px 0;
+}
+
+.how-description {
+    max-width: 500px;
+    color: #64748b;
+    font-size: 15px;
+    margin: 0;
+}
+
+.how-heading-image {
+    width: 58%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.how-heading-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.steps-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto 60px auto;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.process-number {
+    width: 35px;
+    height: 35px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.process-card {
+    width: 94%;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+}
+
+.process-card:hover {
+    box-shadow: 0 5px 15px #e2e8f0;
+}
+
+.process-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.process-icon img {
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.process-content {
+    width: 80%;
+}
+
+.process-content h2 {
+    color: black;
+    font-size: 19px;
+    margin: 7px 0 8px 0;
+}
+
+.process-content p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+.how-cta {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    background-color: #eff6ff;
+    border-radius: 10px;
+    padding: 35px 45px;
+    display: flex;
+}
+
+.cta-content {
+    width: 65%;
+}
+
+.cta-content h2 {
+    color: black;
+    font-size: 25px;
+    margin: 0 0 8px 0;
+}
+
+.cta-content p {
+    color: #64748b;
+    margin: 0 0 20px 0;
+}
+
+.how-post-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 11px 22px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.how-post-button:hover {
+    background-color: #1e3a8a;
+}
+
+.how-find-button {
+    display: inline-block;
+    background-color: white;
+    color: #2563eb;
+    padding: 11px 22px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+}
+
+.how-find-button:hover {
+    background-color: #dbeafe;
+}
+
+.cta-image {
+    width: 35%;
+    text-align: right;
+}
+
+.cta-image img {
+    width: 220px;
+}
+
+@media(max-width: 1200px) and (min-width: 901px) {
+    .how-heading {
+        min-height: 340px;
+    }
+
+    .how-heading-content {
+        width: 42%;
+    }
+
+    .how-heading-content h1 {
+        font-size: 34px;
+    }
+
+    .how-heading-image {
+        width: 58%;
+        height: 340px;
+    }
+
+    .how-heading-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0.90) 35%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .how-heading {
+        display: block;
+        text-align: center;
+    }
+
+    .how-heading-content {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .how-description {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .how-heading-image {
+        display: none;
+    }
+
+    .process-step {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .process-number {
+        margin: 0 auto 10px auto;
+    }
+
+    .process-card {
+        width: 100%;
+    }
+
+    .how-cta {
+        display: block;
+        text-align: center;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .cta-image {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .how-heading {
+        padding-top: 40px;
+    }
+
+    .how-heading-content h1 {
+        font-size: 34px;
+    }
+
+    .process-card {
+        display: block;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .process-icon {
+        margin: 0 auto 15px auto;
+    }
+
+    .process-content {
+        width: 100%;
+    }
+    
+    .how-cta {
+        padding: 30px 20px;
+    }
+
+    .how-post-button, .how-find-button {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
