@@ -148,4 +148,6 @@ Use sample information when testing the website rather than real passwords or se
 
 ## Academic Purpose
 
-This project demonstrates the planning, design, and development of a recruitment website using front-end web technologies. It is intended for educational presentation and evaluation and is not an operational recruitment service.
+This project was developed as a case study project for **IT-WS02 — Web Systems and Technologies 2**. It demonstrates the planning, design, and development of an interactive recruitment website using HTML, CSS, and JavaScript.
+
+The project applies course concepts including tables, forms, ES6 syntax, events, window objects, DOM manipulation, and client-side form validation. It is intended for educational presentation and evaluation and does not operate as an actual recruitment service.
