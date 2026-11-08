@@ -55,7 +55,6 @@ The project applies HTML, CSS, and JavaScript concepts covered in class, includi
 | HTML5 | Page structure, forms, and tables |
 | CSS3 | Styling and responsive layouts |
 | JavaScript | Interactions, validation, and dynamic content |
-| localStorage | Retaining selected records in the browser |
 
 No backend server or database is required to run the current prototype.
 
